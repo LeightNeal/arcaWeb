@@ -12,6 +12,7 @@
     --color-border: #cfcfcf;
     /* medidas */
     --header-height: 4rem;
+    --top: 10vh;
 
     /* elevaciones */
     --z-menu: 10;
@@ -34,6 +35,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 /* componentes */
@@ -154,7 +156,7 @@ nav ul li a {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
+    object-position: top;
     opacity: .4;
     z-index: -10;
 }
@@ -171,4 +173,55 @@ nav ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.form-search{
+    width: 100%;
+    max-width: 100%;
+    padding: calc(var(--header-height) / 2);
+    height: auto;
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container-search {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form {
+    position: relative;
+    top:  calc(var(--top) - 25vh);
+    z-index: 10;
+    width: 60%;
+    max-width: 70%;
+    box-shadow: .1vmin .1vmin .1vmin .2vmin var(--color-border);
+}
+
+.filter{
+    padding: 1rem 2rem;
+    width: calc(var(--header-height) * 5);
+    position: relative;
+    margin-top: .8rem;
+}
+
+.label{
+    position: absolute;
+    top: -.1rem;
+    margin-top: 1rem;
+}
+
+.button {
+    width: 60%;
+    padding: 1rem 2rem;
+    color: #fff;
+    margin-top: calc(var(--header-height)/4);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button--submit {
+    background: var(--color-success);
 }
