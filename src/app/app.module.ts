@@ -8,6 +8,15 @@ import { NavWelcomeComponent } from './components/navbars/nav-welcome/nav-welcom
 import { LandingComponent } from './pages/welcome/landing/landing.component';
 import { WelcomeComponent } from './pages/welcome/welcome/welcome.component';
 import { LoginComponent } from './pages/welcome/login/login.component';
+import { ContactComponent } from './pages/welcome/contact/contact.component';
+import { AdoptComponent } from './pages/welcome/adopt/adopt.component';
+import { AdoptADogComponent } from './pages/welcome/adopt-adog/adopt-adog.component';
+import { AdoptACatComponent } from './pages/welcome/adopt-acat/adopt-acat.component';
+import { LostComponent } from './pages/welcome/lost/lost.component';
+import { NewsComponent } from './pages/welcome/news/news.component';
+import { DatesComponent } from './pages/welcome/dates/dates.component';
+import { TipsComponent } from './pages/welcome/tips/tips.component';
+import { FormSearchComponent } from './components/forms/form-search/form-search.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +25,16 @@ import { LoginComponent } from './pages/welcome/login/login.component';
     NavWelcomeComponent,
     LandingComponent,
     WelcomeComponent,
-    LoginComponent
+    LoginComponent,
+    ContactComponent,
+    AdoptComponent,
+    AdoptADogComponent,
+    AdoptACatComponent,
+    LostComponent,
+    NewsComponent,
+    DatesComponent,
+    TipsComponent,
+    FormSearchComponent
   ],
   imports: [
     BrowserModule,
