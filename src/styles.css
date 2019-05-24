@@ -1,3 +1,5 @@
+/* You can add global styles to this file, and also import other style files */
+
 /* variables */
 
 :root {
@@ -10,6 +12,7 @@
     --color-border: #cfcfcf;
     /* medidas */
     --header-height: 4rem;
+    --top: 10vh;
 
     /* elevaciones */
     --z-menu: 10;
@@ -17,12 +20,13 @@
 
 /* resetear estilos del navegador */
 
-/* *, *::before, *::after{
+*, *::before, *::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* clases de tipo layout */
@@ -31,92 +35,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 /* componentes */
 
 /* encabezado */
-
-header .logo {
-    width: calc(var(--header-height) * 3.5);
-    height: 100%;
-}
-.logo img{
-    width: 100%;
-    max-width: 100%;
-    height: 100%;
-    max-height: 100%;
-    object-fit: fill;
-}
-
-/* .button-menu {
-    cursor: pointer;
-    color: var(--color-warn);
-    transition: all 1s ease-out;
-}
-
-.nav {
-    background: #fcfcfc;
-    display: block;
-    position: fixed;
-    right: -40vw;
-    width: 40vw;
-    top: 80px;
-    height: calc(100vh - var(--header-height));
-    z-index: var(--z-menu);
-    transition: right .6s ease-in-out;
-    opacity: .99;
-}
-
-.nav-visible {
-    right: 0;
-}
-
-.nav__link{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: var(--color-text);
-    width: inherit;
-    height: inherit;
-}
-
-.nav__item {
-    padding: 1rem 2rem;
-    width: 100%;
-    height: 100%;
-    transition: all 0.6s ease-in;
-}
-
-.nav__item:hover {
-    background: var(--color-warn);
-}
-
-.nav__item:hover > .nav__link{
-    color: #fff;
-}
-
-.nav-active {
-    background: var(--color-warn);
-}
-
-.nav-active > .nav__link {
-    color: #fff;
-}
-
-.nav__toggle {
-    height: 51px;
-    overflow: hidden;
-} */ */
-
-:root{
-    --header-height: 4rem;
-}
-
-body{
-    background: white;
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-}
 
 .container{
     width: 90%;
@@ -124,15 +48,15 @@ body{
     margin: auto;
 }
 
-header{
-    height: 100vh;
-    background: linear-gradient(rgba(105,76,146,.9),rgba(157,127,186,.9)), url('../src/assets/img/mujerAbrazandoPerro.jpg') left no-repeat;
+.jumbotron{
+    height: calc(100vh - var(--header-height));
+    background: linear-gradient(45deg,rgba(105,76,146,.9), rgba(157,127,186,.9)) , url('assets/img/mujerAbrazandoPerro.jpg') left no-repeat;
     background-size: cover;
 }
 
-header .logo {
-    width: calc(var(--header-height) * 3.5);
-    height: 100%;
+.menu .logo {
+    width: calc(var(--header-height) * 2);
+    height: calc(var(--header-height) * 1.6);
 }
 
 .logo img{
@@ -145,26 +69,36 @@ header .logo {
 
 #container-menu{
     display: flex;
+    height: 100%;
     justify-content: space-between;
+    align-items: center;
 }
 
 nav ul{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 0;
-    margin-top: 50px;
 }
 
 nav ul li{
     margin-right: 60px;
     list-style: none;
-    color: white;
+}
+
+nav ul li a {
+    color: #fff;
+    transition: border-bottom 0.3s ease-in-out;
+}
+
+.active, nav ul li a:hover {
+    border-bottom: calc(var(--header-height)/10) solid #fff;
 }
 
 .container-title{
     display: flex;
     justify-content: center;
-    margin: 8vh 0;
+    align-items: center;
 }
 
 .container-title h1{
@@ -180,6 +114,7 @@ nav ul li{
     text-align: center;
     text-transform: capitalize;
     margin-bottom: 40px;
+    margin: calc(var(--header-height) / 2) 0;
 }
 
 .container-title a{
@@ -196,4 +131,97 @@ nav ul li{
 
 .container-title .title{
     text-align: center;
+    position: relative;
+    top: calc(var(--header-height) * 2);
+}
+
+.menu {
+    width: 100%;
+    height: calc(var(--header-height) * 2);
+    background: linear-gradient(135deg,rgba(105,76,146,.9), rgba(157,127,186,.9)), url('assets/img/mujerAbrazandoPerro.jpg') top no-repeat;
+    background-size: cover;
+    
+}
+
+.banner {
+    width: 100%;
+    height: calc(var(--header-height) * 8);
+    background: #00AB5B;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+    position: relative;
+}
+
+.banner img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    opacity: .4;
+    z-index: -10;
+}
+
+.banner h3 {
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: calc(var(--header-height) / 1.5);
+}
+
+.banner__content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-search{
+    width: 100%;
+    max-width: 100%;
+    padding: calc(var(--header-height) / 2);
+    height: auto;
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container-search {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form {
+    position: relative;
+    top:  calc(var(--top) - 25vh);
+    z-index: 10;
+    width: 60%;
+    max-width: 70%;
+    box-shadow: .1vmin .1vmin .1vmin .2vmin var(--color-border);
+}
+
+.filter{
+    padding: 1rem 2rem;
+    width: calc(var(--header-height) * 5);
+    position: relative;
+    margin-top: .8rem;
+}
+
+.label{
+    position: absolute;
+    top: -.1rem;
+    margin-top: 1rem;
+}
+
+.button {
+    width: 60%;
+    padding: 1rem 2rem;
+    color: #fff;
+    margin-top: calc(var(--header-height)/4);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button--submit {
+    background: var(--color-success);
 }
