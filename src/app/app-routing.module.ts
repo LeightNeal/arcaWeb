@@ -3,9 +3,21 @@ import { Routes, RouterModule } from '@angular/router';
 import { LandingComponent } from './pages/welcome/landing/landing.component';
 import { LoginComponent } from './pages/welcome/login/login.component';
 import { WelcomeComponent } from './pages/welcome/welcome/welcome.component';
+import { AdoptComponent } from './pages/welcome/adopt/adopt.component';
+import { LostComponent } from './pages/welcome/lost/lost.component';
+import { NewsComponent } from './pages/welcome/news/news.component';
+import { DatesComponent } from './pages/welcome/dates/dates.component';
+import { TipsComponent } from './pages/welcome/tips/tips.component';
+import { ContactComponent } from './pages/welcome/contact/contact.component';
 
 const welcomeRoutes: Routes = [
   {path: 'landing', component: LandingComponent},
+  {path: 'adopt', component: AdoptComponent},
+  {path: 'lost', component: LostComponent},
+  {path: 'news', component: NewsComponent},
+  {path: 'dates', component: DatesComponent},
+  {path: 'tips', component: TipsComponent},
+  {path: 'contact', component: ContactComponent},
   {path: 'login', component: LoginComponent},
   {path: '', pathMatch: 'full', redirectTo: 'landing'}
 ];

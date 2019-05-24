@@ -1,18 +1,32 @@
 <header class="menu">
     <div class="container" id="container-menu">
-      <figure class="logo">
-          <img src="assets/img/logoarca.png" alt="Logo de Arca">
-      </figure>
-      <nav>
-          <ul>
-              <li>Home</li>
-              <li>Adopta</li>
-              <li>Perdidos</li>
-              <li>Noticias</li>
-              <li>Citas</li>
-              <li>Tips</li>
-              <li>Contacto</li>
-          </ul>
-      </nav>
+        <figure class="logo">
+            <img src="assets/img/arca-nuevo-logo.jpeg" alt="Logo de Arca">
+        </figure>
+        <nav>
+            <ul>
+                <li routerLinkActive="active">
+                    <a [routerLink]="['/welcome','landing']">Home</a>
+                </li>
+                <li routerLinkActive="active">
+                    <a [routerLink]="['/welcome','adopt']">Adopta</a>
+                </li>
+                <li routerLinkActive="active">
+                    <a [routerLink]="['/welcome','lost']">Perdidos</a>
+                </li>
+                <li routerLinkActive="active">
+                    <a [routerLink]="['/welcome','news']">Noticias</a>
+                </li>
+                <li routerLinkActive="active">
+                    <a [routerLink]="['/welcome','dates']">Citas</a>
+                </li>
+                <li routerLinkActive="active">
+                    <a [routerLink]="['/welcome','tips']">Tips</a>
+                </li>
+                <li routerLinkActive="active">
+                    <a [routerLink]="['/welcome','contact']">Contacto</a>
+                </li>
+            </ul>
+        </nav>
     </div>
 </header>

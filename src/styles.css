@@ -82,7 +82,15 @@ nav ul{
 nav ul li{
     margin-right: 60px;
     list-style: none;
+}
+
+nav ul li a {
     color: #fff;
+    transition: border-bottom 0.3s ease-in-out;
+}
+
+.active, nav ul li a:hover {
+    border-bottom: calc(var(--header-height)/10) solid #fff;
 }
 
 .container-title{
@@ -131,4 +139,36 @@ nav ul li{
     background: linear-gradient(135deg,rgba(105,76,146,.9), rgba(157,127,186,.9)), url('assets/img/mujerAbrazandoPerro.jpg') top no-repeat;
     background-size: cover;
     
+}
+
+.banner {
+    width: 100%;
+    height: calc(var(--header-height) * 8);
+    background: #00AB5B;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+    position: relative;
+}
+
+.banner img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: .4;
+    z-index: -10;
+}
+
+.banner h3 {
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: calc(var(--header-height) / 1.5);
+}
+
+.banner__content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
