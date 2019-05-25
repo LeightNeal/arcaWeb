@@ -19,6 +19,7 @@ import { TipsComponent } from './pages/welcome/tips/tips.component';
 import { FormSearchComponent } from './components/forms/form-search/form-search.component';
 import { NewCardComponent } from './components/new-card/new-card.component';
 import { CardTypeComponent } from './components/cards/card-type/card-type.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { CardTypeComponent } from './components/cards/card-type/card-type.compon
     TipsComponent,
     FormSearchComponent,
     NewCardComponent,
-    CardTypeComponent
+    CardTypeComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
