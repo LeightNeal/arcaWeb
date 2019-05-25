@@ -197,7 +197,7 @@ nav ul li a {
     z-index: 10;
     width: 60%;
     max-width: 70%;
-    box-shadow: .1vmin .1vmin .1vmin .2vmin var(--color-border);
+    box-shadow: .2vmin .2vmin .2vmin .2vmin var(--color-border);
 }
 
 .filter{
@@ -224,4 +224,63 @@ nav ul li a {
 
 .button--submit {
     background: var(--color-success);
+}
+
+.categories {
+    padding-bottom: var(--header-height);
+    justify-content: space-around;
+}
+
+.card {
+    width: 60vmin;
+    max-width: 60vmin;
+    height: 70vmin;
+    border-radius: 1vmin;
+    box-shadow: .1vmin .1vmin .1vmin .2vmin var(--color-border);
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr var(--header-height);
+    grid-gap: 0;
+}
+
+.card__figure, .card__figure img {
+    height: 100%;
+    width: 100%;
+}
+
+.card__figure img {
+    object-fit: cover;
+    object-position: center;
+    border-top-left-radius: 1vmin;
+    border-top-right-radius: 1vmin;
+}
+
+.card__footer {
+    width: 100%;
+    background: var(--color-text);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1rem;
+    border-bottom-left-radius: 1vmin;
+    border-bottom-right-radius: 1vmin;
+}
+
+.card__link {
+    height: 100%;
+    width: 40%;
+    display: inherit;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-success);
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+    border-bottom-right-radius: 1vmin;
+}
+
+.card__link a {
+    color: #fff;
 }

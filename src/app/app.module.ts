@@ -17,6 +17,8 @@ import { NewsComponent } from './pages/welcome/news/news.component';
 import { DatesComponent } from './pages/welcome/dates/dates.component';
 import { TipsComponent } from './pages/welcome/tips/tips.component';
 import { FormSearchComponent } from './components/forms/form-search/form-search.component';
+import { NewCardComponent } from './components/new-card/new-card.component';
+import { CardTypeComponent } from './components/cards/card-type/card-type.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { FormSearchComponent } from './components/forms/form-search/form-search.
     NewsComponent,
     DatesComponent,
     TipsComponent,
-    FormSearchComponent
+    FormSearchComponent,
+    NewCardComponent,
+    CardTypeComponent
   ],
   imports: [
     BrowserModule,
