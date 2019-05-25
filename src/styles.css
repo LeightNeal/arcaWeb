@@ -18,6 +18,17 @@
     --z-menu: 10;
 }
 
+:root{
+	--gris: #9f9f9f;
+	--naranje: #FF8F12;
+}
+
+.body-gray{
+	font-family: 'Open Sans', sans-serif;
+	color: var(--gris);
+	font-size: 13px;
+}
+
 /* resetear estilos del navegador */
 
 *, *::before, *::after{
@@ -284,4 +295,63 @@ nav ul li a {
 
 .card__link a {
     color: #fff;
+}
+
+ol,ul{
+	text-decoration: none;
+	text-decoration-color: none;
+}
+
+footer{
+    background-color: #363d41;
+    display: flex;
+    color: var(--gris);
+    padding-top: 1vw;
+    padding-bottom: 1vh;
+    position: relative;
+}
+
+footer section div ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    margin-left: 10vh;
+}
+
+.tel, .iconTelephone{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 1vh;
+}
+
+.iconTelephone{
+    position: absolute;
+    right: 10vh;
+}
+
+.tel{
+    position: absolute;
+    right: 20vh;
+   padding: 1vh;
+}
+
+footer section div ul li{
+    margin-right: 60px;
+    list-style: none;
+}
+
+footer section div ul li a, .tel {
+    font-family: 'Open Sans', sans-serif;
+	color: var(--gris);
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.active, footer section div ul li a:hover {
+    color: white;
+    font-family: sans-serif;
+    font-size: 13px;
+    border-bottom: 0 solid #fff;
 }
