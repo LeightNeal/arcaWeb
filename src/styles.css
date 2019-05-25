@@ -237,6 +237,7 @@ nav ul li a {
     height: 70vmin;
     border-radius: 1vmin;
     box-shadow: .1vmin .1vmin .1vmin .2vmin var(--color-border);
+    flex: 1;
 }
 
 .card-grid {

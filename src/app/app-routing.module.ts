@@ -12,15 +12,11 @@ import { ContactComponent } from './pages/welcome/contact/contact.component';
 import { AdoptADogComponent } from './pages/welcome/adopt-adog/adopt-adog.component';
 import { AdoptACatComponent } from './pages/welcome/adopt-acat/adopt-acat.component';
 
-const adoptRoutes: Routes = [
-  {path: 'adopt-dogs', component: AdoptADogComponent},
-  {path: 'adopt-cats', component: AdoptACatComponent},
-  {path: '', pathMatch: 'full', redirectTo: 'adopt-dogs'}
-];
-
 const welcomeRoutes: Routes = [
   {path: 'landing', component: LandingComponent},
-  {path: 'adopt', component: AdoptComponent, children: adoptRoutes},
+  {path: 'adopt', component: AdoptComponent},
+  {path: 'adopt-dogs', component: AdoptADogComponent},
+  {path: 'adopt-cats', component: AdoptACatComponent},
   {path: 'lost', component: LostComponent},
   {path: 'news', component: NewsComponent},
   {path: 'dates', component: DatesComponent},
