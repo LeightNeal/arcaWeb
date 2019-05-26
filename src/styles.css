@@ -556,3 +556,7 @@ input[type="submit"]:hover{
     align-items: center;
     justify-content: space-around;
 }
+.map{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}

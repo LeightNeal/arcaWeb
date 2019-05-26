@@ -20,7 +20,11 @@ import { FormSearchComponent } from './components/forms/form-search/form-search.
 import { NewCardComponent } from './components/new-card/new-card.component';
 import { CardTypeComponent } from './components/cards/card-type/card-type.component';
 import { FooterComponent } from './components/footer/footer.component';
+<<<<<<< HEAD
 import { CurrentNewsComponent } from './components/sections/current-news/current-news.component';
+=======
+import { MapComponent } from './components/map/map.component';
+>>>>>>> 7bb69684b55d44c995585977fd6f9a22298bee4d
 
 @NgModule({
   declarations: [
@@ -42,7 +46,11 @@ import { CurrentNewsComponent } from './components/sections/current-news/current
     NewCardComponent,
     CardTypeComponent,
     FooterComponent,
+<<<<<<< HEAD
     CurrentNewsComponent
+=======
+    MapComponent
+>>>>>>> 7bb69684b55d44c995585977fd6f9a22298bee4d
   ],
   imports: [
     BrowserModule,
