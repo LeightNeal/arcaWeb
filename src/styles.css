@@ -234,6 +234,7 @@ footer section div ul li a, .tel {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
     position: relative;
     background-size: cover;
+    background-position: top;
 }
 
 .banner-adopt img {
