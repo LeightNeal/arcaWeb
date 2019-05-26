@@ -141,11 +141,46 @@ footer section div ul{
     margin-left: 10vh;
 }
 
+.clock{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 3vh;
+    /* height: 50%; */
+    position: absolute;
+    right: 10vh;
+}
+
+.direccion{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 7vh;
+    height: 50%;
+    position: absolute;
+    right: 10vh;
+}
+
+.tel{
+    font-size: 50px;
+}
+
 .tel, .iconTelephone{
     display: flex;
     align-items: center;
     position: absolute;
     top: 1vh;
+    /* height: 50%; */
+}
+
+.calendario{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 5vh;
+    height: 50%;
+    position: absolute;
+    right: 10vh;
 }
 
 .iconTelephone{
@@ -410,3 +445,83 @@ footer section div ul li a, .tel {
     text-align: center;
     font-size: calc(var(--header-height) / 1.5);
 }
+
+#contacto h3{
+    font-size: 25px;
+    font-weight: normal;
+    text-align: center;
+}
+
+#contacto .form{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 77%;
+    margin: auto;
+}
+
+textarea{
+    padding: 8px 0;
+    border: 0;
+    border-bottom: 1px solid #5cb8ff;
+    font-size: 15px;
+    color: #212121;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #363d41;
+    color: white;
+}
+
+input[type="text"],input[type="email"]{
+width: 49%;
+margin-bottom: 15px;
+padding: 8px 0;
+border: 0;
+border-bottom: 1px solid #5cb8ff;
+font-size: 15px;
+color: #212121;
+color: white;
+}
+
+input[type="text"]:focus,input[type="email"]:focus, textarea:focus, .in{
+outline: 0;
+border-bottom: 1px solid#0387d1;
+border-radius: 5px;
+background-color: #363d41;
+color: white;
+}
+
+input[type="submit"], .submit{
+    width: 165px;
+    border-radius: 5px;
+    background: #5cb8ff;
+    font-size: 14px;
+    padding: 10px 0;
+    color: white;
+   box-shadow: none;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type="submit"]:hover{
+    background: #59a7cc;
+    transition: .4s;
+}
+
+.success{
+    color: white;
+    background: #44be75;
+    padding: 15px 50px;
+    margin-bottom: 20px;
+    position: fixed;
+    top: 90%;
+    right: 100px;
+    display: none;
+}
+
+.form{
+   top: 1px;
+   box-shadow: none;
+} 
