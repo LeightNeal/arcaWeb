@@ -10,6 +10,7 @@
     --color-success: #00AB5B;
     --color-text: #222627;
     --color-border: #cfcfcf;
+
     /* medidas */
     --header-height: 4rem;
     --top: 10vh;
@@ -22,6 +23,7 @@
 	--gris: #9f9f9f;
 	--naranje: #FF8F12;
 }
+
 
 .body-gray{
 	font-family: 'Open Sans', sans-serif;
@@ -60,14 +62,14 @@
 }
 
 .jumbotron{
-    height: calc(100vh - var(--header-height));
+    height: 100vh;
     background: linear-gradient(45deg,rgba(105,76,146,.9), rgba(157,127,186,.9)) , url('assets/img/mujerAbrazandoPerro.jpg') left no-repeat;
     background-size: cover;
 }
 
 .menu .logo {
-    width: calc(var(--header-height) * 2);
-    height: calc(var(--header-height) * 1.6);
+    width: calc(var(--header-height) * 1.5);
+    height: calc(var(--header-height) * 1.5);
 }
 
 .logo img{
@@ -105,6 +107,16 @@ nav ul li a {
 .active, nav ul li a:hover {
     border-bottom: calc(var(--header-height)/10) solid #fff;
 }
+
+.menu {
+    width: 100%;
+    height: calc(var(--header-height) * 1.5);
+    background: transparent;
+    position: fixed;
+    z-index: var(--z-menu);
+}
+
+/* Banner del landing */
 
 .container-title{
     display: flex;
@@ -146,13 +158,10 @@ nav ul li a {
     top: calc(var(--header-height) * 2);
 }
 
-.menu {
-    width: 100%;
-    height: calc(var(--header-height) * 2);
-    background: linear-gradient(135deg,rgba(105,76,146,.9), rgba(157,127,186,.9)), url('assets/img/mujerAbrazandoPerro.jpg') top no-repeat;
-    background-size: cover;
-    
-}
+/* Página adopcion */
+
+
+/* Banner de la página de adopción */
 
 .banner {
     width: 100%;
@@ -185,6 +194,8 @@ nav ul li a {
     align-items: center;
     justify-content: center;
 }
+
+/* Formulario de búsqueda por filtro en la página de adopción */
 
 .form-search{
     width: 100%;
@@ -237,6 +248,8 @@ nav ul li a {
     background: var(--color-success);
 }
 
+/* Tarjetas de categorías de mascotas */
+
 .categories {
     padding-bottom: var(--header-height);
     justify-content: space-around;
@@ -277,7 +290,7 @@ nav ul li a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 1rem;
+    padding: 0 0 0 1rem;
     border-bottom-left-radius: 1vmin;
     border-bottom-right-radius: 1vmin;
 }
@@ -296,6 +309,8 @@ nav ul li a {
 .card__link a {
     color: #fff;
 }
+
+/* Footer */
 
 ol,ul{
 	text-decoration: none;
