@@ -20,6 +20,7 @@ import { FormSearchComponent } from './components/forms/form-search/form-search.
 import { NewCardComponent } from './components/new-card/new-card.component';
 import { CardTypeComponent } from './components/cards/card-type/card-type.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { MapComponent } from './components/map/map.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { FooterComponent } from './components/footer/footer.component';
     FormSearchComponent,
     NewCardComponent,
     CardTypeComponent,
-    FooterComponent
+    FooterComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,
