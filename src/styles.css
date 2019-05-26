@@ -58,7 +58,7 @@
 .container{
     width: 90%;
     max-width: 1300px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .jumbotron{
@@ -446,6 +446,8 @@ footer section div ul li a, .tel {
     font-size: calc(var(--header-height) / 1.5);
 }
 
+/* Formulario de contacto del footer */
+
 #contacto h3{
     font-size: 25px;
     font-weight: normal;
@@ -525,3 +527,22 @@ input[type="submit"]:hover{
    top: 1px;
    box-shadow: none;
 } 
+
+/* Datos de contacto del footer */
+
+.data {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
