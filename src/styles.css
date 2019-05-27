@@ -596,6 +596,13 @@ color: black;
         border-radius:8px;
         padding: 0px 9px 0px 9px;
     }
+
+    .btn-outline-light{
+        background: white;
+        border: 3px solid #694C92;
+        color: #694C92;
+        margin-top: 3vh;
+    }
     
     
     
