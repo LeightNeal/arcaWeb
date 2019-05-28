@@ -22,6 +22,7 @@ import { CardTypeComponent } from './components/cards/card-type/card-type.compon
 import { FooterComponent } from './components/footer/footer.component';
 import { CurrentNewsComponent } from './components/sections/current-news/current-news.component';
 import { MapComponent } from './components/map/map.component';
+import { ReportsListComponent } from './components/lists/reports-list/reports-list.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { MapComponent } from './components/map/map.component';
     CardTypeComponent,
     FooterComponent,
     CurrentNewsComponent,
-    MapComponent
+    MapComponent,
+    ReportsListComponent
   ],
   imports: [
     BrowserModule,
