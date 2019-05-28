@@ -6,6 +6,7 @@
     /* colores */
     --color-primary: #9D3092;
     --color-accent: #FF8F12;
+    --color-accent-light: #FAD012;
     --color-warn: #EA2332;
     --color-success: #00AB5B;
     --color-text: #222627;
@@ -66,6 +67,7 @@
     background: linear-gradient(45deg,rgba(105,76,146,.9), rgba(157,127,186,.9)) , url('assets/img/mujerAbrazandoPerro.jpg') left no-repeat;
     background-size: cover;
     background-blend-mode: color;
+    background-attachment: fixed;
 }
 
 .menu .logo {
@@ -115,6 +117,39 @@ nav ul li a {
     background: transparent;
     position: absolute;
     z-index: var(--z-menu);
+}
+
+.button-hamburguer{
+    display: none;
+}
+
+.nav-active {
+    top: calc(var(--header-height)*1.5);
+}
+
+@media screen and (max-width: 768px) {
+    .button-hamburguer {
+        display: block;
+    }
+
+    #container-menu {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #container-menu nav {
+        display: block;
+        position: relative;
+        width: 60vw;
+        background: var(--color-text);
+        height: calc(100vh - calc(var(--header-height) * 1.5 ));
+        top: calc(calc(var(--header-height) * 1.5 ) - 100vh);
+        z-index: var(--z-menu);
+        transition: top 1s ease-in-out;
+    }
+
 }
 
 /* Footer */
@@ -211,6 +246,7 @@ footer section div ul li a, .tel {
     font-family: sans-serif;
     font-size: 13px;
     border-bottom: 0 solid #fff;
+    text-decoration: none;
 }
 
 /* Página del landing */
@@ -270,6 +306,7 @@ footer section div ul li a, .tel {
     position: relative;
     background-size: cover;
     background-position: top;
+    background-attachment: fixed;
 }
 
 .banner-adopt img {
@@ -421,6 +458,7 @@ footer section div ul li a, .tel {
     background-blend-mode: multiply;
     clip-path: polygon(0 0, 100% 0, 100% 90% , 50% 100%, 0 90%);
     position: relative;
+    background-attachment: fixed;
 }
 
 .banner-lost img {
@@ -558,6 +596,9 @@ input[type="submit"]:hover{
     align-items: center;
     justify-content: space-around;
 }
+
+/* Mapa del landing */
+
 .map{
     margin-top: 10vh;
     margin-bottom: 10vh;
@@ -567,42 +608,63 @@ input[type="submit"]:hover{
     background: #A8A6A6;
     padding: 20px;
     border-radius: 120px;
-    }
-   
-    .Icon{
-        margin-top: 10px;
-        margin-bottom:10px; 
-        color: #FFF;
-        font-size: 50px;
-        text-align: center;
-    }
-   
-    .opcioncontra{
-        text-align: center;
-        margin-top: 20px;
-        font-size: 14px;
-    }
+}
 
-    .form-control:focus{
-color: black;
-    }
+.Icon{
+    margin-top: 10px;
+    margin-bottom:10px; 
+    color: #FFF;
+    font-size: 50px;
+    text-align: center;
+}
 
-    .ContentForm{
-        width: 400px;
-        margin: 50px auto;
-        background-color: #F3EDED;
-        border: 1px solid #ECE8E8;
-        height: 400px;
-        border-radius:8px;
-        padding: 0px 9px 0px 9px;
-    }
+.opcioncontra{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
 
-    .btn-outline-light{
-        background: white;
-        border: 3px solid #694C92;
-        color: #694C92;
-        margin-top: 3vh;
-    }
+.form-control:focus{
+    color: black;
+}
+
+.ContentForm{
+    width: 400px;
+    margin: 50px auto;
+    background-color: #F3EDED;
+    border: 1px solid #ECE8E8;
+    height: 400px;
+    border-radius:8px;
+    padding: 0px 9px 0px 9px;
+}
+
+.btn-outline-light{
+    background: white;
+    border: 3px solid #694C92;
+    color: #694C92;
+    margin-top: 3vh;
+}
     
-    
-    
+.banner-date {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg, var(--color-accent) 55%, var(--color-accent-light) 80%), url('./assets/img/mujerAbrazandoGato.jpg') left no-repeat;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.banner-date__content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}    
+
+.banner-date__content h3 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: calc(var(--header-height));
+}
+
