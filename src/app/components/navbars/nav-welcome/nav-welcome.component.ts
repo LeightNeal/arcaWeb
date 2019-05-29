@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, ElementRef, OnChanges } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, OnChanges, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-nav-welcome',
@@ -7,15 +7,12 @@ import { Component, OnInit, ViewChild, ElementRef, OnChanges } from '@angular/co
 })
 export class NavWelcomeComponent implements OnInit {
 
-  @ViewChild('sideMenu') menuSide: ElementRef;
+  toggled = false;
 
   constructor() {}
 
   ngOnInit() {
   }
 
-  changeClass() {
-    this.menuSide.nativeElement.classList.toggle('nav-active');
-    console.log('botón cliqueado');
-  }
+
 }

@@ -23,6 +23,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { CurrentNewsComponent } from './components/sections/current-news/current-news.component';
 import { MapComponent } from './components/map/map.component';
 import { ReportsListComponent } from './components/lists/reports-list/reports-list.component';
+import { FormDateComponent } from './components/forms/form-date/form-date.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { ReportsListComponent } from './components/lists/reports-list/reports-li
     FooterComponent,
     CurrentNewsComponent,
     MapComponent,
-    ReportsListComponent
+    ReportsListComponent,
+    FormDateComponent
   ],
   imports: [
     BrowserModule,

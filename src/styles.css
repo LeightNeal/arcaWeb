@@ -15,9 +15,17 @@
     /* medidas */
     --header-height: 4rem;
     --top: 10vh;
+    --banner-height: 85vh;
+    --banner-title-font-size: 4rem;
 
     /* elevaciones */
     --z-menu: 10;
+
+    /* breakpoints */
+    --laptop: 1024px;
+    --laptop-mini: 900px;
+    --tablet: 768px;
+    --grand-phone: 4 
 }
 
 :root{
@@ -63,11 +71,17 @@
 }
 
 .jumbotron{
-    height: 100vh;
+    height: var(--banner-height);
     background: linear-gradient(45deg,rgba(105,76,146,.9), rgba(157,127,186,.9)) , url('assets/img/mujerAbrazandoPerro.jpg') left no-repeat;
     background-size: cover;
     background-blend-mode: color;
     background-attachment: fixed;
+}
+
+@media screen and (max-width: 768px) {
+    .jumbotron {
+        --banner-height: 40vh;
+    }
 }
 
 .menu .logo {
@@ -124,10 +138,14 @@ nav ul li a {
 }
 
 .nav-active {
-    visibility: visible;
+    display: initial;
 }
 
 @media screen and (max-width: 768px) {
+    .menu {
+        --header-height: 3rem;
+    }
+
     .button-hamburguer {
         display: block;
     }
@@ -140,16 +158,24 @@ nav ul li a {
     }
 
     #container-menu nav {
-        display: block;
+        display: none;
         position: relative;
         width: 60vw;
         background: var(--color-text);
         height: calc(100vh - calc(var(--header-height) * 1.5 ));
-        visibility: hidden;
-        z-index: var(--z-menu);
-        transition: visibility 1s ease-out;
+        z-index: 100;
     }
 
+    #container-menu nav ul {
+        width: 100%;
+        height: 100%;
+        display: block;
+        border: 1px solid var(--color-border);
+    }
+
+    #container-menu nav ul li {
+        padding: 1rem 2rem;
+    }
 }
 
 /* Footer */
@@ -174,59 +200,6 @@ footer section div ul{
     align-items: center;
     margin: 0;
     margin-left: 10vh;
-}
-
-.clock{
-    display: flex;
-    align-items: center;
-    position: absolute;
-    top: 3vh;
-    /* height: 50%; */
-    position: absolute;
-    right: 10vh;
-}
-
-.direccion{
-    display: flex;
-    align-items: center;
-    position: absolute;
-    top: 7vh;
-    height: 50%;
-    position: absolute;
-    right: 10vh;
-}
-
-.tel{
-    font-size: 50px;
-}
-
-.tel, .iconTelephone{
-    display: flex;
-    align-items: center;
-    position: absolute;
-    top: 1vh;
-    /* height: 50%; */
-}
-
-.calendario{
-    display: flex;
-    align-items: center;
-    position: absolute;
-    top: 5vh;
-    height: 50%;
-    position: absolute;
-    right: 10vh;
-}
-
-.iconTelephone{
-    position: absolute;
-    right: 10vh;
-}
-
-.tel{
-    position: absolute;
-    right: 20vh;
-   padding: 1vh;
 }
 
 footer section div ul li{
@@ -299,7 +272,7 @@ footer section div ul li a, .tel {
 
 .banner-adopt {
     width: 100%;
-    height: 100vh;
+    height: var(--banner-height);
     background: linear-gradient(45deg, var(--color-success), var(--color-success)), url('assets/img/Perros-abrazando-a-sus-Dueños-16-730x523.jpg') left no-repeat;
     background-blend-mode: multiply;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
@@ -309,21 +282,11 @@ footer section div ul li a, .tel {
     background-attachment: fixed;
 }
 
-.banner-adopt img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top;
-    opacity: .4;
-    z-index: -10;
-}
-
 .banner-adopt h3 {
     color: #fff;
     text-transform: uppercase;
     text-align: center;
-    font-size: calc(var(--header-height) / 1.5);
+    font-size: calc(var(--banner-title-font-size) / 1.5);
 }
 
 .banner-adopt__content {
@@ -331,6 +294,18 @@ footer section div ul li a, .tel {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    .banner-adopt {
+        --banner-height: 40vh;
+        background-position-x: right;
+        background-position-y: top;
+    }
+
+    .banner-adopt h3 {
+        --banner-title-font-size: 2rem;
+    }
 }
 
 /* Formulario de búsqueda por filtro en la página de adopción */
@@ -344,6 +319,7 @@ footer section div ul li a, .tel {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
 }
 
 .container-search {
@@ -352,25 +328,17 @@ footer section div ul li a, .tel {
 }
 
 .form {
-    position: relative;
-    top:  calc(var(--top) - 25vh);
     z-index: 10;
     width: 60%;
-    max-width: 70%;
+    background: #fff;
     box-shadow: .2vmin .2vmin .2vmin .2vmin var(--color-border);
 }
 
 .filter{
     padding: 1rem 2rem;
-    width: calc(var(--header-height) * 5);
+    width: calc(var(--header-height) * 8);
     position: relative;
     margin-top: .8rem;
-}
-
-.label{
-    position: absolute;
-    top: -.1rem;
-    margin-top: 1rem;
 }
 
 .button {
@@ -386,6 +354,40 @@ footer section div ul li a, .tel {
     background: var(--color-success);
 }
 
+@media screen and (max-width: 768px) {
+    .form {
+        width: 90%;
+    }
+
+    .form-search {
+        justify-content: center;
+        padding: 1rem;
+        align-items: space-between;
+    }
+
+    .filter {
+        width: calc(var(--header-height) * 4);
+        position: relative;
+        bottom: -.5rem;
+    }
+
+    .label {
+        position: absolute;
+        margin-top: 1rem;
+        
+    }
+
+    .form-search label {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .button--submit {
+        width: 80vmin;
+    }
+}
+
 /* Tarjetas de categorías de mascotas */
 
 .categories {
@@ -395,11 +397,9 @@ footer section div ul li a, .tel {
 
 .card {
     width: 60vmin;
-    max-width: 60vmin;
     height: 70vmin;
     border-radius: 1vmin;
     box-shadow: .1vmin .1vmin .1vmin .2vmin var(--color-border);
-    flex: 1;
 }
 
 .card-grid {
@@ -423,6 +423,7 @@ footer section div ul li a, .tel {
 
 .card__footer {
     width: 100%;
+    height: 100%;
     background: var(--color-text);
     color: #fff;
     display: flex;
@@ -448,26 +449,49 @@ footer section div ul li a, .tel {
     color: #fff;
 }
 
+@media screen and (max-width: 768px) {
+
+    .categories {
+        height: calc(90vmin *2);
+    }
+
+    .card {
+        width: 70vmin;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .categories {
+        height: calc(100vmin * 2);
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .categories{
+        height: calc(100vmin*2.5);
+    }
+
+    .card {
+        width: 90vmin;
+    }
+
+    .card__footer h3 {
+        font-size: calc(var(--header-height)/4);
+    }
+}
+
 /* Banner de la página perdidos */
 
 .banner-lost {
     width: 100%;
-    height: 100vh;
+    height: var(--banner-height);
     background: linear-gradient(45deg, var(--color-secondary), var(--color-warn)), url('assets/img/peroAdopcion444444.jpg') left no-repeat;
     background-size: cover;
     background-blend-mode: multiply;
     clip-path: polygon(0 0, 100% 0, 100% 90% , 50% 100%, 0 90%);
     position: relative;
     background-attachment: fixed;
-}
-
-.banner-lost img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    opacity: .5;
 }
 
 .banner-lost__content{
@@ -644,10 +668,14 @@ input[type="submit"]:hover{
     color: #694C92;
     margin-top: 3vh;
 }
-    
+  
+/* Página de citas */
+
+/* Banner de la página de citas */
+
 .banner-date {
     width: 100%;
-    height: 100vh;
+    height: var(--banner-height);
     background: linear-gradient(45deg, var(--color-accent) 55%, var(--color-accent-light) 80%), url('./assets/img/mujerAbrazandoGato.jpg') left no-repeat;
     background-blend-mode: multiply;
     background-size: cover;
@@ -668,3 +696,18 @@ input[type="submit"]:hover{
     font-size: calc(var(--header-height));
 }
 
+/* Formulario de la página de citas */
+
+.form-date {
+    width: calc(var(--header-height)*10);
+    height: calc(var(--header-height)*8);
+    box-shadow: .1rem .1rem .1rem .1rem var(--color-border);
+    border-radius: 1vmin;
+    position: relative;
+    top: -10rem;
+    background: #fff;
+}
+
+.container-form-date {
+    padding: 2rem 0;
+}
