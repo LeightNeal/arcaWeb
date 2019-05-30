@@ -558,9 +558,16 @@ footer section div ul li a, .tel {
     color: white;
 }
 
+.in{
+   border: transparent;
+   border-bottom: 1px solid #5cb8ff;
+   background-color: #363d41;
+color: white;
+}
+
 .input[type="text"]:focus,
-/* input[type="email"]:focus, */
- .textarea:focus, .in{
+.input[type="email"]:focus,
+ .textarea:focus, .in:focus{
 outline: 0;
 border-bottom: 1px solid#0387d1;
 border-radius: 5px;
