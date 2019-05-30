@@ -380,7 +380,7 @@ footer section div ul li a, .tel {
 .form {
     z-index: 10;
     width: 50%;
-    background: #fff;
+    background: transparent;
     box-shadow: .2vmin .2vmin .2vmin .2vmin var(--color-border);
 }
 
@@ -404,6 +404,7 @@ footer section div ul li a, .tel {
 .button--submit {
     background: var(--color-success);
     border-radius: 5px;
+    transition: all .3s ease-in;
 }
 
 .button--submit:hover{
