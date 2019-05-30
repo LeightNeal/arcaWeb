@@ -547,6 +547,10 @@ footer section div ul li a, .tel {
     color: white;
 }
 
+textarea::placeholder{
+    padding-top: 10px;
+}
+
 .input[type="text"],.input[type="email"]{
     width: 49%;
     margin-bottom: 15px;
@@ -563,6 +567,7 @@ footer section div ul li a, .tel {
    border-bottom: 1px solid #5cb8ff;
    background-color: #363d41;
 color: white;
+height: 7vh;
 }
 
 .input[type="text"]:focus,
