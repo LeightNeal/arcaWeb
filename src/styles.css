@@ -580,6 +580,7 @@ textarea::placeholder{
    background-color: #363d41;
 color: white;
 height: 7vh;
+width: 250px;
 }
 
 .input[type="text"]:focus,
