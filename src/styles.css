@@ -338,6 +338,8 @@ footer section div ul li a, .tel {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 2px 2px 5px #999;
+    margin-bottom: 5px;
 }
 
 .container-search {
