@@ -1,18 +1,17 @@
-<form class="form-date">
-  <h3>Agenda una cita para esterilización</h3>
-  <h4>Ingresa los siguientes datos</h4>
+<form class="form-date centered-layout">
+  <h2>Agenda una cita para esterilización</h2>
   <label for="txtName">Nombre del dueño</label>
-  <input id="txtName" type="text" required>
+  <input class="form-date__input" id="txtName" placeholder="Dueño" type="text" required>
   <label for="txtPetName">Nombre de la mascota</label>
-  <input id="txtPetName" type="text" required>
-  <label for="selectAge"></label>
-  <select name="" id="selectAge">
+  <input class="form-date__input" id="txtPetName" placeholder="Mascota" type="text" required>
+  <label for="selectAge">Selecciona la edad de tu mascota</label>
+  <select class="form-date__input" name="" id="selectAge" required>
       <option value="">Elige un rango de edad</option>
       <option value="">Menos de un año</option>
       <option value="">Entre 1 y 2 años</option>
       <option value="">Más de 2 años</option>
   </select>
   <label for="txtDate">Elige una fecha</label>
-  <input type="date" name="" id="txtDate">
-  label
+  <input class="form-date__input" type="date" name="" id="txtDate" required>
+  <button class="form-date__submit" type="submit">Agendar cita</button>
 </form>
