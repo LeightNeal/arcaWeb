@@ -707,6 +707,9 @@ color: white;
 /* Página de citas */
 
 /* Banner de la página de citas */
+.centered-layout{
+    background-color: #f2f3f8;
+}
 
 .banner-date {
     width: 100%;
