@@ -64,6 +64,18 @@
 
 /* encabezado */
 
+.agendarCitaButton:hover{
+    text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+    background:#FAD029;
+    width: 170px;
+    padding: 17px 27px;
+    margin-top: -3px;
+}
+
+.agendarCitaButton::before{
+    left: -48%;
+}
+
 .container{
     width: 90%;
     max-width: 1300px;
@@ -552,6 +564,10 @@ footer section div ul li a, .tel {
     color: white;
 }
 
+textarea::placeholder{
+    padding-top: 10px;
+}
+
 .input[type="text"],.input[type="email"]{
     width: 49%;
     margin-bottom: 15px;
@@ -563,9 +579,17 @@ footer section div ul li a, .tel {
     color: white;
 }
 
+.in{
+   border: transparent;
+   border-bottom: 1px solid #5cb8ff;
+   background-color: #363d41;
+color: white;
+height: 7vh;
+}
+
 .input[type="text"]:focus,
-/* input[type="email"]:focus, */
- .textarea:focus, .in{
+.input[type="email"]:focus,
+ .textarea:focus, .in:focus{
 outline: 0;
 border-bottom: 1px solid#0387d1;
 border-radius: 5px;
@@ -688,6 +712,9 @@ color: white;
 /* Página de citas */
 
 /* Banner de la página de citas */
+.centered-layout{
+    background-color: #f2f3f8;
+}
 
 .banner-date {
     width: 100%;
