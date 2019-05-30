@@ -335,7 +335,7 @@ footer section div ul li a, .tel {
 
 .form {
     z-index: 10;
-    width: 60%;
+    width: 50%;
     background: #fff;
     box-shadow: .2vmin .2vmin .2vmin .2vmin var(--color-border);
 }
@@ -345,6 +345,7 @@ footer section div ul li a, .tel {
     width: calc(var(--header-height) * 8);
     position: relative;
     margin-top: .8rem;
+    width: 100%
 }
 
 .button {
@@ -358,6 +359,10 @@ footer section div ul li a, .tel {
 
 .button--submit {
     background: var(--color-success);
+}
+
+.form-search div {
+    width: 100%;
 }
 
 @media screen and (max-width: 768px) {
