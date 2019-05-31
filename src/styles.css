@@ -727,7 +727,7 @@ textarea::placeholder{
 }
 
 .input[type="text"],.input[type="email"]{
-    width: 49%;
+    width: 47%;
     margin-bottom: 15px;
     padding: 8px 8px;
     border: 0;
@@ -743,7 +743,7 @@ textarea::placeholder{
    background-color: #363d41;
 color: white;
 height: 7vh;
-width: 250px;
+width: 200px;
 }
 
 .input[type="text"]:focus,
