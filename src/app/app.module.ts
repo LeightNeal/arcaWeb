@@ -24,6 +24,7 @@ import { CurrentNewsComponent } from './components/sections/current-news/current
 import { MapComponent } from './components/map/map.component';
 import { ReportsListComponent } from './components/lists/reports-list/reports-list.component';
 import { FormDateComponent } from './components/forms/form-date/form-date.component';
+import { LostCardComponent } from './components/cards/lost-card/lost-card.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { FormDateComponent } from './components/forms/form-date/form-date.compon
     CurrentNewsComponent,
     MapComponent,
     ReportsListComponent,
-    FormDateComponent
+    FormDateComponent,
+    LostCardComponent
   ],
   imports: [
     BrowserModule,
