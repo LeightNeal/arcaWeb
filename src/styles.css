@@ -576,6 +576,104 @@ footer section div ul li a, .tel {
     font-size: calc(var(--header-height) / 1.5);
 }
 
+.card--lost {
+    width: 30vw;
+    height: 80vh;
+    border-radius: 1vmin;
+    box-shadow: .3vmin .3vmin .3vmin .3vmin rgba(10, 10, 10, 0.4);
+    margin-bottom: 1rem;
+}
+
+.card--lost-grid {
+    display: grid;
+    grid-template: 60px 1fr .5fr 60px / 1fr;
+}
+
+.header--dog {
+    background: var(--color-success);
+}
+
+.header--cat {
+    background: var(--color-primary);
+}
+
+.card--lost__header {
+    background: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 1vmin;
+    border-top-right-radius: 1vmin;
+    opacity: .8;
+}
+
+.card--lost__header h3 {
+    color: #fff;
+}
+
+.card--lost__figure {
+    background: var(--color-success);
+    overflow: hidden;
+}
+
+.card--lost__figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.card--lost__content {
+    padding: 2rem;
+}
+
+.card--lost__footer {
+    background: var(--color-warn);
+    border-bottom-left-radius: 1vmin;
+    border-bottom-right-radius: 1vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: .8;
+}
+
+.card--lost__footer a {
+    color: #fff;
+}
+
+.container-losts {
+    margin-top: 1rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 960px) {
+    .card--lost {
+        width: 45vw;
+    }
+
+    .banner-lost {
+        background-position-x: center;
+        background-position-y: top;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card--lost {
+        width: 80vw;
+    }
+} 
+
+@media screen and (max-width: 320px) {
+    .card--lost {
+        width: 100%;
+    }
+}
+
 /* Formulario de contacto del footer */
 
 .container-footer{
