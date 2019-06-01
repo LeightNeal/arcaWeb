@@ -364,7 +364,7 @@ footer section div ul li a, .tel {
     padding: calc(var(--header-height) / 2);
     height: auto;
     background: #fff;
-    box-shadow: 2px 2px 5px #999;
+    box-shadow: 0 0 1vmin .4vmin rgba(10, 10, 10, .4);
     margin-bottom: 5px;
     position: relative;
     top: -15vh;
@@ -469,7 +469,7 @@ footer section div ul li a, .tel {
     width: 60vmin;
     height: 70vmin;
     border-radius: 1vmin;
-    box-shadow: .1vmin .1vmin .1vmin .2vmin var(--color-border);
+    box-shadow: 0 0 1vmin .4vmin rgba(10, 10, 10, .4);
 }
 
 .card-grid {
@@ -965,14 +965,14 @@ color: white;
     margin-bottom: 1rem;
     border-radius: .5vmin;
     border: none;
-    transition: border-bottom .1s ease-in;
+    transition: border .1s ease-in;
 }
 
 .form-date__input:focus {
-    border-top: transparent;
-    border-left: transparent;
-    border-right: transparent;
-    border-bottom: .3vmin solid var(--color-accent);
+    border-top: .6vmin solid var(--color-accent);
+    border-left: .6vmin solid var(--color-accent);
+    border-right: .6vmin solid var(--color-accent);
+    border-bottom: .6vmin solid var(--color-accent);
 }
 
 .form-date__submit {
