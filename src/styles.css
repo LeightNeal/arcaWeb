@@ -5,6 +5,8 @@
 :root {
     /* colores */
     --color-primary: #9D3092;
+    --color-primary-dark: #694C92;
+    --color-primary-light: #9D7FBA;
     --color-accent: #FF8F12;
     --color-accent-light: #FAD012;
     --color-warn: #EA2332;
@@ -1010,3 +1012,125 @@ color: white;
     }
 }
 
+/* Página de noticias */
+
+/* Sección de banner */
+
+.banner-news {
+    width: 100%;
+    height: var(--banner-height);
+    background: linear-gradient(45deg ,var(--color-primary-dark) 60%, var(--color-primary-light)), url('assets/img/gatoAdopcion2222.jpg') left no-repeat;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-attachment: fixed;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 75% 100%, 50% 90%, 25% 100%, 0 90%);
+}
+
+.banner-news__content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-news__content h3 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: var(--header-height);
+}
+
+/* Sección de noticias */
+
+.news {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+}
+
+.container-news {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Tarjeta de noticia */
+
+.card-new-grid {
+    display: grid;
+    grid-template: 1fr 80px .5fr / 1fr;
+}
+
+.card--new {
+    width: 30vw;
+    height: 70vh;
+    margin-bottom: 1rem;
+    border-radius: 1vmin;
+    box-shadow: .3vmin .3vmin .3vmin .3vmin rgba(10,10,10,.4);
+}
+
+.card--new__figure {
+    background: var(--color-success);
+    border-top-left-radius: 1vmin;
+    border-top-right-radius: 1vmin;
+    overflow: hidden;
+}
+
+.card--new__figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-top-left-radius: 1vmin;
+    border-top-right-radius: 1vmin;
+}
+
+.card--new__header {
+    background: #efefef;
+    padding: 1rem;
+}
+
+.card--new__content {
+    background: #fff;
+    border-bottom-left-radius: 1vmin;
+    border-bottom-right-radius: 1vmin;
+    padding: 1rem;
+}
+
+.card--new__content p {
+    text-align: justify;
+}
+
+@media screen and (max-width: 768px) {
+    .card--new {
+        width: 45vw;
+    }
+
+    .banner-news__content h3{
+        font-size: 2.5rem;
+    }
+
+    .banner-news {
+        background-position-x: center;
+        background-position-y: top;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container-news {
+        display: block;
+        padding-left: 1vmin;
+        padding-right: 1vmin;
+    }
+
+    .banner-news__content h3 {
+        font-size: 1.5rem;
+    }
+
+    .card--new {
+        width: 100%
+    }
+}
