@@ -582,7 +582,7 @@ footer section div ul li a, .tel {
     width: 30vw;
     height: 80vh;
     border-radius: 1vmin;
-    box-shadow: .3vmin .3vmin .3vmin .3vmin rgba(10, 10, 10, 0.4);
+    box-shadow: 0 0 1vmin .4vmin rgba(10, 10, 10, 0.4);
     margin-bottom: 1rem;
 }
 
@@ -943,7 +943,7 @@ color: white;
 .form-date {
     width: 40vmax;
     height: auto;
-    box-shadow: .1rem .1rem .1rem .1rem var(--color-border);
+    box-shadow: 0 0 1vmin .4vmin rgba(10, 10, 10, 0.4);
     border-radius: 1vmin;
     position: relative;
     top: -10rem;
@@ -981,7 +981,7 @@ color: white;
     border: none;
     border-radius: 1vmin;
     color: #fff;
-    box-shadow: .2vmin .2vmin .2vmin .2vmin rgba(10, 10, 10, .3);
+    box-shadow: 0 0 1vmin .2vmin rgba(10, 10, 10, .4);
 }
 
 @media screen and (max-width: 980px) {
@@ -1069,7 +1069,7 @@ color: white;
     height: 70vh;
     margin-bottom: 1rem;
     border-radius: 1vmin;
-    box-shadow: .3vmin .3vmin .3vmin .3vmin rgba(10,10,10,.4);
+    box-shadow: 0 0 1vmin .4vmin rgba(10,10,10,.4);
 }
 
 .card--new__figure {
