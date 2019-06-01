@@ -1141,9 +1141,11 @@ color: white;
 .banner-tips {
     width: 100%;
     height: var(--banner-height);
-    background: linear-gradient(45deg, var(--color-success-light), var(--color-success)), url('assets/img/gatoAdopcion1111.jpg') left no-repeat;
+    background: linear-gradient(45deg, var(--color-success-light), var(--color-success)), url('assets/img/gatoAdopcion11.jpg') left no-repeat;
     background-blend-mode: multiply;
     background-size: cover;
+    background-position-x: center;
+    background-position-y: -20vh;
     background-attachment: fixed;
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }
