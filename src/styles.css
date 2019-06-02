@@ -1176,3 +1176,29 @@ color: #9D7FBA;
     font-size: calc(var(--banner-title-font-size) / 1.5);
     text-transform: uppercase;
 }
+
+/* pagina de single-post */
+.singlePost-grid{
+    display: grid;
+grid-template-rows: 45% 1fr;
+grid-gap: 30px;
+}
+
+.singlePost-title{
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+.singlePost-image{
+    grid-row: 1;
+}
+
+.singlePost-new{
+    width: 50%;
+    grid-row: 1;
+    text-align: justify;
+}

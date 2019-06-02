@@ -26,6 +26,7 @@ import { ReportsListComponent } from './components/lists/reports-list/reports-li
 import { FormDateComponent } from './components/forms/form-date/form-date.component';
 import { LostCardComponent } from './components/cards/lost-card/lost-card.component';
 import { SinglePostComponent } from './pages/single-post/single-post.component';
+import { SinglePostCardComponent } from './components/single-post-card/single-post-card.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import { SinglePostComponent } from './pages/single-post/single-post.component';
     ReportsListComponent,
     FormDateComponent,
     LostCardComponent,
-    SinglePostComponent
+    SinglePostComponent,
+    SinglePostCardComponent
   ],
   imports: [
     BrowserModule,
