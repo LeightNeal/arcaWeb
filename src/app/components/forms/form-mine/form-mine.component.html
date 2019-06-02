@@ -1,25 +1,21 @@
-<form class="form--mine" action="" [formGroup]="formMine">
-  <div>
-    <label for="txtName">Nombre</label>
-    <input formControlName="name" [ngClass]="{'input--error': formMine.controls['name'].errors?.required}" class="form--mine__input" type="text" id="txtName">
-    <p class="form--mine__error" *ngIf="formMine.controls['name'].errors?.required">El nombre es necesario.</p>
-  </div>
-  <div>
-    <label for="txtEmail">Correo electrónico</label>
-    <input formControlName="email" [ngClass]="{'input--error': formMine.controls['email'].errors?.required, 'input--error': formMine.controls['email'].errors?.email}" class="form--mine__input" type="email" id="txtEmail">
-    <p class="form--mine__error" *ngIf="formMine.controls['email'].errors?.required">El correo es necesario.</p>
-    <p class="form--mine__error" *ngIf="formMine.controls['email'].errors?.email">El correo no es válido.</p>
-  </div>
-  <div>
-    <label for="txtPhone">Teléfono</label>
-    <input formControlName="phone" [ngClass]="{'input--error': formMine.controls['phone'].errors?.required}" class="form--mine__input" type="text" id="txtPhone">
-    <p class="form--mine__error" *ngIf="formMine.controls['phone'].errors?.required">El telefono es necesario.</p>
-  </div>
-  <div>
-    <label for="txtComment">Comentario</label>
-    <textarea formControlName="comment" [ngClass]="{'input--error': formMine.controls['comment'].errors?.required}" class="form--mine__input" id="txtComment" cols="30" rows="10"></textarea>
-    <p class="form--mine__error" *ngIf="formMine.controls['comment'].errors?.required">Un comentario es necesario.</p>
-  </div>
+<form class="form--mine form-isMine" action="">
+    <h2>Ingresa tus datos</h2>
+    <div class="inputWithIcon inputIconBg">
+        <input type="text" placeholder="Nombre" class="formLost-text" required>
+        <img src="https://img.icons8.com/material/24/000000/gender-neutral-user.png" class="formLost-icon">
+      </div>
+      <div class="inputWithIcon inputIconBg">
+        <input type="email" placeholder="Correo Electrónico" required>
+        <img src="https://img.icons8.com/material/24/000000/filled-message.png" class="formLost-icon">
+      </div>
+      <div class="inputWithIcon inputIconBg">
+        <input type="tel" placeholder="Teléfono" required>
+        <img src="https://img.icons8.com/material/24/000000/phone.png" class="formLost-icon">
+      </div>
+      <div class="inputWithIcon inputIconBg">
+        <input type="text" placeholder="Comentario" required>
+        <img src="https://img.icons8.com/material/24/000000/comments.png" class="formLost-icon">
+      </div>
   <button class="button-mine" type="submit">Enviar datos</button>
   <button class="button-mine--cancel" (click)="emitCloseModal()" type="button">cancelar</button>
 </form>

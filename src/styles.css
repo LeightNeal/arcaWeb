@@ -1290,8 +1290,12 @@ color: #9D7FBA;
 
 /* form es mio */
 
+.form-isMine h2 {
+    text-align: center;
+}
+
 .form-isMine input{
-width: 50%;
+width: 100%;
 border: 2px solid #aaa;
 border-radius: 4px;
 margin: 8px 0;
