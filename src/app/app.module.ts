@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -27,6 +28,8 @@ import { FormDateComponent } from './components/forms/form-date/form-date.compon
 import { LostCardComponent } from './components/cards/lost-card/lost-card.component';
 import { SinglePostComponent } from './pages/single-post/single-post.component';
 import { SinglePostCardComponent } from './components/single-post-card/single-post-card.component';
+import { FormMineComponent } from './components/forms/form-mine/form-mine.component';
+import { ModalMineComponent } from './components/modals/modal-mine/modal-mine.component';
 
 @NgModule({
   declarations: [
@@ -54,11 +57,15 @@ import { SinglePostCardComponent } from './components/single-post-card/single-po
     FormDateComponent,
     LostCardComponent,
     SinglePostComponent,
-    SinglePostCardComponent
+    SinglePostCardComponent,
+    FormMineComponent,
+    ModalMineComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

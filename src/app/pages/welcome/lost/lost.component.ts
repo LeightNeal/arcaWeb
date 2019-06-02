@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styles: []
 })
 export class LostComponent implements OnInit {
+  show = false;
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  changeState(state: boolean) {
+    this.show = state;
+  }
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-lost-card',
@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styles: []
 })
 export class LostCardComponent implements OnInit {
+  @Output() emitModal: EventEmitter<boolean>;
 
-  constructor() { }
+  constructor() { 
+    this.emitModal = new EventEmitter();
+  }
 
   ngOnInit() {
+  }
+
+  showModal() {
+    this.emitModal.emit(true);
   }
 
 }

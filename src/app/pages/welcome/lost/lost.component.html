@@ -1,3 +1,4 @@
+<app-modal-mine *ngIf="show" (emitState)="changeState($event)"></app-modal-mine>
 <div class="centered-layout">
   <section class="banner-lost">
     <div class="container banner-lost__content">
@@ -5,9 +6,9 @@
     </div>
   </section>
   <section class="container-losts">
-    <app-lost-card></app-lost-card>
-    <app-lost-card></app-lost-card>
-    <app-lost-card></app-lost-card>
-    <app-lost-card></app-lost-card>
+    <app-lost-card (emitModal)="changeState($event)"></app-lost-card>
+    <app-lost-card (emitModal)="changeState($event)"></app-lost-card>
+    <app-lost-card (emitModal)="changeState($event)"></app-lost-card>
+    <app-lost-card (emitModal)="changeState($event)"></app-lost-card>
   </section>
 </div>

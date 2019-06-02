@@ -63,6 +63,25 @@
     flex-wrap: wrap;
 }
 
+/* Animaciones */
+
+.fade-in {
+    animation-name: fadeIn;
+    animation-duration: .5s;
+    animation-delay: .1s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 /* componentes */
 
 /* encabezado */
@@ -654,6 +673,44 @@ footer section div ul li a, .tel {
     flex-wrap: wrap;
 }
 
+.form--mine {
+    padding: 1rem;
+    border-radius: 1vmin;
+    background: #fff;
+}
+
+.form--mine__input {
+    width: 100%;
+    border: none;
+    padding: 1rem;
+    transition: border .2s ease-in .1s;
+}
+
+.form--mine__input:focus {
+    border: .6vmin solid var(--color-primary-dark);
+    border-radius: .5vmin;
+}
+
+.input--error {
+    border: .6vmin solid var(--color-warn);
+}
+
+.form--mine__error {
+    font-size: .5rem;
+    color: var(--color-warn);
+}
+
+.modal-container {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 100vh;
+    background: rgba(10, 10, 10, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media screen and (max-width: 960px) {
     .card--lost {
         width: 45vw;
@@ -977,10 +1034,7 @@ color: white;
 }
 
 .form-date__input:focus {
-    border-top: .6vmin solid var(--color-accent);
-    border-left: .6vmin solid var(--color-accent);
-    border-right: .6vmin solid var(--color-accent);
-    border-bottom: .6vmin solid var(--color-accent);
+    border: .6vmin solid var(--color-accent);
 }
 
 .form-date__submit {
@@ -1230,3 +1284,5 @@ color: #9D7FBA;
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
+
+
