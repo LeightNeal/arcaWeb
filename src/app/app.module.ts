@@ -30,6 +30,8 @@ import { SinglePostComponent } from './pages/single-post/single-post.component';
 import { SinglePostCardComponent } from './components/single-post-card/single-post-card.component';
 import { FormMineComponent } from './components/forms/form-mine/form-mine.component';
 import { ModalMineComponent } from './components/modals/modal-mine/modal-mine.component';
+import { FormLostComponent } from './components/forms/form-lost/form-lost.component';
+import { IsMineComponent } from './pages/is-mine/is-mine.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +61,9 @@ import { ModalMineComponent } from './components/modals/modal-mine/modal-mine.co
     SinglePostComponent,
     SinglePostCardComponent,
     FormMineComponent,
-    ModalMineComponent
+    ModalMineComponent,
+    FormLostComponent,
+    IsMineComponent
   ],
   imports: [
     BrowserModule,

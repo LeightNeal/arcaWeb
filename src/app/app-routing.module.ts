@@ -12,6 +12,7 @@ import { ContactComponent } from './pages/welcome/contact/contact.component';
 import { AdoptADogComponent } from './pages/welcome/adopt-adog/adopt-adog.component';
 import { AdoptACatComponent } from './pages/welcome/adopt-acat/adopt-acat.component';
 import { SinglePostComponent } from '../app/pages/single-post/single-post.component';
+import {IsMineComponent} from '../app/pages/is-mine/is-mine.component';
 
 const welcomeRoutes: Routes = [
   {path: 'landing', component: LandingComponent},
@@ -25,7 +26,8 @@ const welcomeRoutes: Routes = [
   {path: 'contact', component: ContactComponent},
   {path: 'login', component: LoginComponent},
   {path: '', pathMatch: 'full', redirectTo: 'landing'},
-  {path: 'single-post', component: SinglePostComponent}
+  {path: 'single-post', component: SinglePostComponent},
+  {path: 'is-mine', component: IsMineComponent}
 ];
 
 const routes: Routes = [
