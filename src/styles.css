@@ -1327,8 +1327,12 @@ transition: .3s;
     transition: 0.3s;
   }
   
-  .inputWithIcon input:focus, img {
+  /* .inputWithIcon input:focus, img {
     color: dodgerBlue;
+  } */
+
+  .inputWithIcon input{
+    color: #000;
   }
   
   .inputWithIcon.inputIconBg img {
@@ -1338,10 +1342,7 @@ transition: .3s;
     border-radius: 4px 0 0 4px;
   }
   
-  .inputWithIcon.inputIconBg input:focus, img {
-    color: #fff;
-    /* background-color: dodgerBlue; */
-  }
+  
 
   .formLost-icon{
       color: white;
