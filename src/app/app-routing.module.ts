@@ -25,9 +25,9 @@ const welcomeRoutes: Routes = [
   {path: 'tips', component: TipsComponent},
   {path: 'contact', component: ContactComponent},
   {path: 'login', component: LoginComponent},
-  {path: '', pathMatch: 'full', redirectTo: 'landing'},
+  {path: 'is-mine', component: IsMineComponent},
   {path: 'single-post', component: SinglePostComponent},
-  {path: 'is-mine', component: IsMineComponent}
+  {path: '', pathMatch: 'full', redirectTo: 'landing'}
 ];
 
 const routes: Routes = [
