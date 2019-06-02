@@ -11,6 +11,7 @@ import { TipsComponent } from './pages/welcome/tips/tips.component';
 import { ContactComponent } from './pages/welcome/contact/contact.component';
 import { AdoptADogComponent } from './pages/welcome/adopt-adog/adopt-adog.component';
 import { AdoptACatComponent } from './pages/welcome/adopt-acat/adopt-acat.component';
+import { SinglePostComponent } from '../app/pages/single-post/single-post.component';
 
 const welcomeRoutes: Routes = [
   {path: 'landing', component: LandingComponent},
@@ -23,7 +24,8 @@ const welcomeRoutes: Routes = [
   {path: 'tips', component: TipsComponent},
   {path: 'contact', component: ContactComponent},
   {path: 'login', component: LoginComponent},
-  {path: '', pathMatch: 'full', redirectTo: 'landing'}
+  {path: '', pathMatch: 'full', redirectTo: 'landing'},
+  {path: 'single-post', component: SinglePostComponent}
 ];
 
 const routes: Routes = [

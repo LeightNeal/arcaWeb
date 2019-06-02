@@ -1014,6 +1014,19 @@ color: white;
 }
 
 /* Página de noticias */
+.card--new:hover{
+width: 65vh;
+height: 71vh;
+transition: all .2s ease-in .0s;
+}
+
+.new-title{
+    color: #000;
+}
+
+.new-title:hover{
+color: #9D7FBA;
+}
 
 /* Sección de banner */
 

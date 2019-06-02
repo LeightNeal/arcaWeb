@@ -25,6 +25,7 @@ import { MapComponent } from './components/map/map.component';
 import { ReportsListComponent } from './components/lists/reports-list/reports-list.component';
 import { FormDateComponent } from './components/forms/form-date/form-date.component';
 import { LostCardComponent } from './components/cards/lost-card/lost-card.component';
+import { SinglePostComponent } from './pages/single-post/single-post.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { LostCardComponent } from './components/cards/lost-card/lost-card.compon
     MapComponent,
     ReportsListComponent,
     FormDateComponent,
-    LostCardComponent
+    LostCardComponent,
+    SinglePostComponent
   ],
   imports: [
     BrowserModule,
