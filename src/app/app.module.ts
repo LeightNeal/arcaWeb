@@ -27,6 +27,8 @@ import { FormDateComponent } from './components/forms/form-date/form-date.compon
 import { LostCardComponent } from './components/cards/lost-card/lost-card.component';
 import { SinglePostComponent } from './pages/single-post/single-post.component';
 import { SinglePostCardComponent } from './components/single-post-card/single-post-card.component';
+import { FormLostComponent } from './components/forms/form-lost/form-lost.component';
+import { IsMineComponent } from './pages/is-mine/is-mine.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +56,9 @@ import { SinglePostCardComponent } from './components/single-post-card/single-po
     FormDateComponent,
     LostCardComponent,
     SinglePostComponent,
-    SinglePostCardComponent
+    SinglePostCardComponent,
+    FormLostComponent,
+    IsMineComponent
   ],
   imports: [
     BrowserModule,
