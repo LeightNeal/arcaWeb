@@ -1336,7 +1336,7 @@ transition: .3s;
   
   .inputWithIcon.inputIconBg input:focus, img {
     color: #fff;
-    background-color: dodgerBlue;
+    /* background-color: dodgerBlue; */
   }
 
   .formLost-icon{
