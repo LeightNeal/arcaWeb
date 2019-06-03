@@ -647,6 +647,7 @@ footer section div ul li a, .tel {
 
 .card--lost__content {
     padding: 2rem;
+    background: #fff;
 }
 
 .card--lost__footer {
@@ -659,7 +660,7 @@ footer section div ul li a, .tel {
     opacity: .8;
 }
 
-.card--lost__footer a {
+.card--lost__footer p {
     color: #fff;
 }
 
@@ -677,6 +678,7 @@ footer section div ul li a, .tel {
     padding: 1rem;
     border-radius: 1vmin;
     background: #fff;
+    width: 50vw;
 }
 
 .form--mine__input {
@@ -711,6 +713,22 @@ footer section div ul li a, .tel {
     align-items: center;
 }
 
+.button-mine {
+    background: var(--color-primary-dark);
+    padding: .5rem 1rem;
+    border-radius: 1vmin;
+    box-shadow: 0 0 1vmin .4vmin rgba(10, 10, 10, .4);
+    color: #fff;
+    border: none;
+}
+
+.button-mine--cancel {
+    background: #fff;
+    padding: .5rem 1rem;
+    color: var(--color-primary-dark);
+    border: none;
+}
+
 @media screen and (max-width: 960px) {
     .card--lost {
         width: 45vw;
@@ -720,11 +738,26 @@ footer section div ul li a, .tel {
         background-position-x: center;
         background-position-y: top;
     }
+
+}
+
+@media screen and (max-width: 768px) {
+    .form--mine {
+        width: 70vw;
+    }
+
+    .banner-lost {
+        --banner-height: 40vh;
+    }
 }
 
 @media screen and (max-width: 480px) {
     .card--lost {
         width: 80vw;
+    }
+
+    .form--mine {
+        width: 90vw;
     }
 } 
 
