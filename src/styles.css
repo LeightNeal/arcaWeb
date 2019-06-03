@@ -1515,7 +1515,6 @@ transition: .3s;
     margin-bottom: 3vh;
 }
 
-<<<<<<< HEAD
 .inputLogo{
     position: relative;
     padding: .5rem 1rem;
@@ -1536,7 +1535,6 @@ transition: .3s;
     padding: 9px 80px;
     transition: 0.3s;
   }
-=======
 input{
     width: 100%;
     border-radius: 4px;
@@ -1575,4 +1573,3 @@ input{
   }
   
 
->>>>>>> 4b4408a4d5e1f332af3e35b72ea5dc6f3550e7df
