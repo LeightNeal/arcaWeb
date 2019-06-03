@@ -1464,6 +1464,7 @@ transition: .3s;
     background: #fff;
     padding: 2rem;
     margin: auto;
+    margin-bottom: 0;
 }
 
 .form-login h3, .form-date h4{
