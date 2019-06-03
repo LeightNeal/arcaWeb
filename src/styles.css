@@ -1416,4 +1416,32 @@ transition: .3s;
   .formLost-icon{
       color: white;
   }
+
+  /* login */
+
+  .banner-login {
+    width: 100%;
+    height: var(--banner-height);
+    background: linear-gradient(45deg, #F2B6B9, #EB9B96), url('assets/img/adoptaGato.jpg') left no-repeat;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: -20vh;
+    background-attachment: fixed;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+.banner-login__content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-login__content h3 {
+    color: #fff;
+    font-size: calc(var(--banner-title-font-size) / 1.5);
+    text-transform: uppercase;
+}
   
