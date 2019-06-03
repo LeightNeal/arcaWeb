@@ -1503,6 +1503,7 @@ transition: .3s;
 .form-login input{
     border-radius: 5px;
     width: 70%;
+    padding-left: 40px;
 }
 
 .container-form-login {
@@ -1514,3 +1515,23 @@ transition: .3s;
     margin-bottom: 3vh;
 }
 
+.inputLogo{
+    position: relative;
+    padding: .5rem 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: .5vmin;
+    border: none;
+    transition: border .1s ease-in;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.inputLogo img {
+    position: absolute;
+    left: 0px;
+    top: -3px;
+    padding: 9px 80px;
+    transition: 0.3s;
+  }
