@@ -1463,6 +1463,7 @@ transition: .3s;
     top: -10rem;
     background: #fff;
     padding: 2rem;
+    margin: auto;
 }
 
 .form-login h3, .form-date h4{
