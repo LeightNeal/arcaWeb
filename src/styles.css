@@ -759,6 +759,10 @@ footer section div ul li a, .tel {
     .form--mine {
         width: 90vw;
     }
+
+    .banner-lost__content h3 {
+        font-size: 2rem;
+    }
 } 
 
 @media screen and (max-width: 320px) {
