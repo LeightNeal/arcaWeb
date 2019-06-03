@@ -1504,4 +1504,7 @@ transition: .3s;
     padding: 2rem 0;
 }
 
+.form-login h2{
+    text-align: center;
+}
 
