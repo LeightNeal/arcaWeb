@@ -1422,7 +1422,7 @@ transition: .3s;
   .banner-login {
     width: 100%;
     height: var(--banner-height);
-    background: linear-gradient(45deg, #F2B6B9, #EB9B96), url('assets/img/adoptaGato.jpg') left no-repeat;
+    background: linear-gradient(45deg, #C05FA4, #EB9B96), url('assets/img/adoptaGato.jpg') left no-repeat;
     background-blend-mode: multiply;
     background-size: cover;
     background-position-x: center;
