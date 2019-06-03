@@ -1487,12 +1487,14 @@ transition: .3s;
 }
 
 .form-login__submit {
+    width: 70%;
     padding: .5rem 1rem;
-    background: #DB108C;
+    background: #9D3092;
     border: none;
     border-radius: 1vmin;
     color: #fff;
     box-shadow: 0 0 1vmin .2vmin rgba(10, 10, 10, .4);
+    margin-bottom: 3vh;
 }
 
 .form-login input{
@@ -1506,5 +1508,6 @@ transition: .3s;
 
 .form-login h2{
     text-align: center;
+    margin-bottom: 3vh;
 }
 
