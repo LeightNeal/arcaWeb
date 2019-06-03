@@ -138,24 +138,24 @@
     align-items: center;
 }
 
-nav ul{
+.menu-normal ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0;
 }
 
-nav ul li{
+.menu-normal ul li{
     margin-right: 60px;
     list-style: none;
 }
 
-nav ul li a {
+.menu-normal ul li a {
     color: #fff;
     transition: border-bottom 0.3s ease-in-out;
 }
 
-.active, nav ul li a:hover {
+.active, .menu-normal ul li a:hover {
     border-bottom: calc(var(--header-height)/10) solid #fff;
 }
 
@@ -171,12 +171,40 @@ nav ul li a {
     display: none;
 }
 
-.nav-active {
-    display: initial;
+.sidemenu {
+    position: fixed;
+    top: var(--header-height);
+    width: 70vw;
+    right: 0;
+    bottom: 0;
+    background: rgba(105, 46, 176, 0.5);
+}
+
+.sidemenu ul {
+    width: 100%;
+    height: 100%;
+}
+
+.sidemenu__item {
+    width: 100%;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #fff;
+}
+
+.sidemenu__link {
+    color: #fff;
+}
+
+.sidemenu__link--active {
+    background: #fff;
+}
+
+.sidemenu__link--active > .sidemenu__link {
+    color: var(--color-primary-dark);
 }
 
 @media screen and (max-width: 1024px) {
-    nav ul li {
+    .menu-normal ul li {
         margin-right: 1.5rem;
     }
 }
@@ -197,24 +225,8 @@ nav ul li a {
         align-items: center;
     }
 
-    #container-menu nav {
+    #container-menu .menu-normal {
         display: none;
-        position: relative;
-        width: 60vw;
-        background: var(--color-text);
-        height: calc(100vh - calc(var(--header-height) * 1.5 ));
-        z-index: 100;
-    }
-
-    #container-menu nav ul {
-        width: 100%;
-        height: 100%;
-        display: block;
-        border: 1px solid var(--color-border);
-    }
-
-    #container-menu nav ul li {
-        padding: 1rem 2rem;
     }
 }
 
@@ -745,15 +757,15 @@ footer section div ul li a, .tel {
     .form--mine {
         width: 70vw;
     }
-
-    .banner-lost {
-        --banner-height: 40vh;
-    }
 }
 
 @media screen and (max-width: 480px) {
     .card--lost {
         width: 80vw;
+    }
+
+    .banner-lost {
+        --banner-height: 60vh;
     }
 
     .form--mine {
