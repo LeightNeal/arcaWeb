@@ -1445,3 +1445,63 @@ transition: .3s;
     text-transform: uppercase;
 }
   
+/* form de login */
+
+.form-login__submit:hover{
+    text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+    background:#C05FA4;
+    padding: 13px 23px;
+    margin-top: -3px;
+}
+
+.form-login {
+    width: 40vmax;
+    height: auto;
+    box-shadow: 0 0 1vmin .4vmin rgba(10, 10, 10, 0.4);
+    border-radius: 1vmin;
+    position: relative;
+    top: -10rem;
+    background: #fff;
+    padding: 2rem;
+}
+
+.form-login h3, .form-date h4{
+    text-align: center;
+}
+
+.container-form-date {
+    padding: 2rem 0;
+}
+
+.form-login__input {
+    padding: .5rem 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: .5vmin;
+    border: none;
+    transition: border .1s ease-in;
+}
+
+.form-login__input:focus {
+    border: .6vmin solid #DB108C;
+}
+
+.form-login__submit {
+    padding: .5rem 1rem;
+    background: #DB108C;
+    border: none;
+    border-radius: 1vmin;
+    color: #fff;
+    box-shadow: 0 0 1vmin .2vmin rgba(10, 10, 10, .4);
+}
+
+.form-login input{
+    border-radius: 5px;
+    width: 70%;
+}
+
+.container-form-login {
+    padding: 2rem 0;
+}
+
+
