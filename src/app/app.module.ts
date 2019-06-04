@@ -33,6 +33,8 @@ import { ModalMineComponent } from './components/modals/modal-mine/modal-mine.co
 import { FormLostComponent } from './components/forms/form-lost/form-lost.component';
 import { IsMineComponent } from './pages/is-mine/is-mine.component';
 import { CardAdoptComponent } from './components/cards/card-adopt/card-adopt.component';
+import { FormContactComponent } from './components/forms/form-contact/form-contact.component';
+import { FormRegisterComponent } from './pages/welcome/form-register/form-register.component';
 
 @NgModule({
   declarations: [
@@ -65,7 +67,9 @@ import { CardAdoptComponent } from './components/cards/card-adopt/card-adopt.com
     ModalMineComponent,
     FormLostComponent,
     IsMineComponent,
-    CardAdoptComponent
+    CardAdoptComponent,
+    FormContactComponent,
+    FormRegisterComponent
   ],
   imports: [
     BrowserModule,
