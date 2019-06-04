@@ -1699,3 +1699,60 @@ input{
     }
 }
 
+/* formulario de registrar */
+
+.form-register__submit:hover{
+    text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+    background:#FAD029;
+    padding: 13px 23px;
+    margin-top: -3px;
+}
+.form-register {
+    width: 40vmax;
+    height: auto;
+    box-shadow: 0 0 1vmin .4vmin rgba(10, 10, 10, 0.4);
+    border-radius: 1vmin;
+    position: relative;
+    top: -10rem;
+    background: #fff;
+    padding: 2rem;
+}
+
+.form-register h3, .form-register h4{
+    text-align: center;
+}
+
+.container-form-register {
+    padding: 2rem 0;
+}
+
+.form-register__input {
+    padding: .5rem 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: .5vmin;
+    border: none;
+    transition: border .1s ease-in;
+}
+
+.form-register__input:focus {
+    border: .6vmin solid var(--color-accent);
+}
+
+.form-register__submit {
+    padding: .5rem 1rem;
+    background: var(--color-accent);
+    border: none;
+    border-radius: 1vmin;
+    color: #fff;
+    box-shadow: 0 0 1vmin .2vmin rgba(10, 10, 10, .4);
+}
+
+.form-register h4{
+    text-align: center;
+}
+
+.container-form-register {
+    padding: 2rem 0;
+}
+
