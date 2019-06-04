@@ -1485,7 +1485,7 @@ transition: .3s;
 }
 
 .form-login__input:focus {
-    border: .6vmin solid #DB108C;
+    border: .6vmin solid rgba(219, 16, 140, .7);
 }
 
 .form-login__submit {
