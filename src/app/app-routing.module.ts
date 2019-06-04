@@ -13,6 +13,7 @@ import { AdoptADogComponent } from './pages/welcome/adopt-adog/adopt-adog.compon
 import { AdoptACatComponent } from './pages/welcome/adopt-acat/adopt-acat.component';
 import { SinglePostComponent } from '../app/pages/single-post/single-post.component';
 import {IsMineComponent} from '../app/pages/is-mine/is-mine.component';
+import {FormRegisterComponent} from '../app/pages/welcome/form-register/form-register.component';
 
 const welcomeRoutes: Routes = [
   {path: 'landing', component: LandingComponent},
@@ -27,6 +28,7 @@ const welcomeRoutes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'is-mine', component: IsMineComponent},
   {path: 'single-post', component: SinglePostComponent},
+  {path: 'register', component: FormRegisterComponent},
   {path: '', pathMatch: 'full', redirectTo: 'landing'}
 ];
 
