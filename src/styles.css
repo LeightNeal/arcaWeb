@@ -173,7 +173,7 @@
 
 .sidemenu {
     position: fixed;
-    top: var(--header-height);
+    top: calc(var(--header-height) * 1.5);
     width: 70vw;
     right: 0;
     bottom: 0;
@@ -1571,5 +1571,103 @@ input{
   .inputWithIcon2 input:focus, img {
     color: #000;
   }
+
   
+/* Página de adoptar perros */
+
+/* Tarjeta de adopción */
+
+.container-dogs {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card-adopt {
+    width: 30vw;
+    height: 70vh;
+    margin-bottom: 1rem;
+    border-radius: 1vmin;
+    box-shadow: 0 0 1vmin .4vmin rgba(10, 10, 10, 0.4);
+    /* overflow: hidden; */
+}
+
+.card-adopt-grid {
+    display: grid;
+    grid-template: repeat(14, 1fr) / repeat(3, 1fr);
+}
+
+.card-adopt__header {
+    background: var(--color-primary-dark);
+    border-top-left-radius: 1vmin;
+    border-top-right-radius: 1vmin;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.card-adopt__header h3 {
+    color: #fff;
+    text-align: center;
+}
+
+.card-adopt__img {
+    background: var(--color-success-light);
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 9;
+}
+
+.card-adopt__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-adopt__content {
+    background: #fff;
+    overflow: hidden;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 9;
+    grid-row-end: 14;
+}
+
+.card-adopt__footer {
+    background: var(--color-warn);
+    height: 100%;
+    width: 100%;
+    border-bottom-left-radius: 1vmin;
+    border-bottom-right-radius: 1vmin;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 14;
+    grid-row-end: 15;
+}
+
+.card-adopt__footer a {
+    color: #fff;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .card-adopt {
+        width: 45vw;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .card-adopt {
+        width: 90vw;
+    }
+}
 

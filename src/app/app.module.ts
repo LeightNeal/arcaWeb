@@ -32,6 +32,7 @@ import { FormMineComponent } from './components/forms/form-mine/form-mine.compon
 import { ModalMineComponent } from './components/modals/modal-mine/modal-mine.component';
 import { FormLostComponent } from './components/forms/form-lost/form-lost.component';
 import { IsMineComponent } from './pages/is-mine/is-mine.component';
+import { CardAdoptComponent } from './components/cards/card-adopt/card-adopt.component';
 
 @NgModule({
   declarations: [
@@ -63,7 +64,8 @@ import { IsMineComponent } from './pages/is-mine/is-mine.component';
     FormMineComponent,
     ModalMineComponent,
     FormLostComponent,
-    IsMineComponent
+    IsMineComponent,
+    CardAdoptComponent
   ],
   imports: [
     BrowserModule,
