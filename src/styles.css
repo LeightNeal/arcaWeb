@@ -1577,7 +1577,7 @@ input{
   .banner-register {
     width: 100%;
     height: var(--banner-height);
-    background: linear-gradient(45deg, #9D3092 55%, #C05FA4 80%), url('./assets/img/perroAdoptado.jpg') left no-repeat;
+    background: linear-gradient(45deg, #C05FA4 55%, #EB9B96 80%), url('./assets/img/perroAdoptado.jpg') left no-repeat;
     background-blend-mode: multiply;
     background-size: cover;
     background-attachment: fixed;
@@ -1703,7 +1703,7 @@ input{
 
 .form-register__submit:hover{
     text-shadow: 0 1px 1px rgba(0,0,0,0.5);
-    background:#FAD029;
+    background:#C05FA4;
     padding: 13px 23px;
     margin-top: -3px;
 }
@@ -1736,12 +1736,12 @@ input{
 }
 
 .form-register__input:focus {
-    border: .6vmin solid var(--color-accent);
+    border: .6vmin solid rgba(219, 16, 140, .7); 
 }
 
 .form-register__submit {
     padding: .5rem 1rem;
-    background: var(--color-accent);
+    background: #9D3092;
     border: none;
     border-radius: 1vmin;
     color: #fff;
