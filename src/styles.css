@@ -1500,6 +1500,17 @@ transition: .3s;
     margin-bottom: 3vh;
 }
 
+.form-login__register {
+    width: 70%;
+    padding: .5rem 1rem;
+    opacity: .7;
+    background: #fff;
+    border: none;
+    border-radius: 1vmin;
+    color: #9D3092;
+    margin-bottom: 3vh;
+}
+
 .form-login input{
     border-radius: 5px;
     width: 70%;
@@ -1707,6 +1718,12 @@ input{
     padding: 13px 23px;
     margin-top: -3px;
 }
+
+.form-register__login {
+    padding: 1rem;
+    color: #C05FA4;
+}
+
 .form-register {
     width: 40vmax;
     height: auto;
@@ -1744,6 +1761,7 @@ input{
     background: #9D3092;
     border: none;
     border-radius: 1vmin;
+    width: 80%;
     color: #fff;
     box-shadow: 0 0 1vmin .2vmin rgba(10, 10, 10, .4);
 }
