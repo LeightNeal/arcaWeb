@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { PetService } from 'src/app/services/pet.service';
+import { Mascota } from 'src/app/models/mascota';
 
 @Component({
   selector: 'app-adopt',
@@ -7,14 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdoptComponent implements OnInit {
 
-  types = [
-    {img: '../../../assets/imgperroAdopcion4444.jpg', description: 'Adopta a un perro', link: ''},
-    {img: 'src/assets/img/gatoAdopcion111.jpg', description: 'Adopta a un gato'}
-  ];
+  mascotas: Mascota[];
 
-  constructor() { }
+  constructor(private petService: PetService) {
+  }
 
-  ngOnInit() {
+  ngOnInit() {}
+
+  buscarMascotas(busqueda: any) {
+    this.petService.buscarMascotarPorFiltro(busqueda.tipo, busqueda.sexo)
+    .subscribe((data: Mascota[]) => {
+      this.mascotas = data;
+      console.log(this.mascotas);
+    }, error => console.log(error));
   }
 
 }
