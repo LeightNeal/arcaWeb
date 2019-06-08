@@ -2164,3 +2164,33 @@ body, html {
 		-moz-transform: scale(1);
 	}
 }
+
+/* card-tips section */
+
+.card-tip{
+    display: grid;
+    grid-template: 200px /  300px 50px 1fr;
+    grid-gap: 10px;
+    grid-template-areas: "img-tip icon-tip content-tip";
+    padding: 30px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 20px;
+    box-shadow: 0 0 1vmin .4vmin rgba(0, 10, 10, .4);
+}
+
+.img-tip{
+    height: 100%;
+    width: 300px;
+    object-fit: cover;
+}
+
+.icon-tip{
+    height: 30%;
+}
+
+.content-tip{
+    display: flex;
+    text-align: justify;
+    align-items: center;
+}
