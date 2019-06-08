@@ -35,6 +35,7 @@ import { IsMineComponent } from './pages/is-mine/is-mine.component';
 import { CardAdoptComponent } from './components/cards/card-adopt/card-adopt.component';
 import { FormContactComponent } from './components/forms/form-contact/form-contact.component';
 import { FormRegisterComponent } from './pages/welcome/form-register/form-register.component';
+import { CardTipComponent } from './components/cards/card-tip/card-tip.component';
 
 @NgModule({
   declarations: [
@@ -69,7 +70,8 @@ import { FormRegisterComponent } from './pages/welcome/form-register/form-regist
     IsMineComponent,
     CardAdoptComponent,
     FormContactComponent,
-    FormRegisterComponent
+    FormRegisterComponent,
+    CardTipComponent
   ],
   imports: [
     BrowserModule,
