@@ -1,12 +1,15 @@
 <article class="card-adopt card-adopt-grid"> 
   <header class="card-adopt__header">
-    <h3>Perro</h3>
+    <h3>{{mascota.tipo}}</h3>
   </header>
   <figure class="card-adopt__img">
-    <img src="../../../../assets/img/peroAdopcion2222.jpg" alt="imagen">
+    <img [src]="mascota.foto" alt="imagen">
   </figure>
   <section class="card-adopt__content">
-    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti adipisci voluptatum repudiandae praesentium distinctio? Tempora consectetur reprehenderit natus sapiente, minima quod vitae nisi similique eius impedit, facilis necessitatibus deserunt ullam.</p> -->
+    <h3>{{mascota.nombre}}</h3>
+    <h5>Edad: {{mascota.edad}}</h5>
+    <h5>Raza: {{mascota.raza}}</h5>
+    <h5>Sexo: {{mascota.sexo}}</h5>
   </section>
   <footer class="card-adopt__footer centered-layout">
     <a>Ver más</a>

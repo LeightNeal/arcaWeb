@@ -1675,6 +1675,7 @@ input{
 .card-adopt__content {
     background: #fff;
     overflow: hidden;
+    padding: 1rem;
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 9;
@@ -2192,5 +2193,28 @@ body, html {
 .content-tip{
     display: flex;
     text-align: justify;
+    align-items: center;
+}
+
+/* Sección de resultados de la página adopta */
+
+.results-container {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    background: var(--color-text);
+}
+
+.results-title {
+    color: #fff;
+    text-align: center;
+}
+
+.results-list {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
 }

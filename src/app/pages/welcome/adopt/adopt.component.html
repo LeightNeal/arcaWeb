@@ -5,6 +5,12 @@
     </div>
   </section>
   <app-form-search (emitirBusqueda)="buscarMascotas($event)" class="form"></app-form-search>
+  <section *ngIf="mascotas" class="results-container">
+    <h2 class="results-title">Resultados de la búsqueda</h2>
+    <article class="results-list">
+      <app-card-adopt *ngFor="let mascota of mascotas" [mascota]="mascota"></app-card-adopt>
+    </article>
+  </section>
   <section class="container centered-layout categories">
       <article class="card-grid card">
         <figure class="card__figure">

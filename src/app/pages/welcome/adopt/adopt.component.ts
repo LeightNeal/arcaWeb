@@ -17,7 +17,7 @@ export class AdoptComponent implements OnInit {
   ngOnInit() {}
 
   buscarMascotas(busqueda: any) {
-    this.petService.buscarMascotarPorFiltro(busqueda.tipo, busqueda.sexo)
+    this.petService.buscarMascotasPorFiltro(busqueda.tipo, busqueda.sexo)
     .subscribe((data: Mascota[]) => {
       this.mascotas = data;
       console.log(this.mascotas);

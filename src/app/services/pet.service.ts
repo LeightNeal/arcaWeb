@@ -15,7 +15,7 @@ export class PetService {
     .valueChanges();
   }
 
-  buscarMascotarPorFiltro(tipo: string, sexo: string) {
+  buscarMascotasPorFiltro(tipo: string, sexo: string) {
     return this.database.list('mascotas/', ref => ref.orderByChild('tipo').equalTo(tipo))
     .valueChanges().pipe(map(data => data.filter((item: Mascota) => item.sexo === sexo)));
   }
