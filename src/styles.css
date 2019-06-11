@@ -43,6 +43,10 @@
 	font-size: 13px;
 }
 
+.pointer {
+    cursor: pointer;
+}
+
 /* resetear estilos del navegador */
 
 *, *::before, *::after{
@@ -1682,6 +1686,10 @@ input{
     grid-row-end: 14;
 }
 
+.card-adopt__content h3 {
+    text-align: center;
+}
+
 .card-adopt__footer {
     background: var(--color-warn);
     height: 100%;
@@ -2217,4 +2225,5 @@ body, html {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap
 }

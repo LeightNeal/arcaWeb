@@ -1,12 +1,13 @@
 <form class="form-register centered-layout">
   <h2>Crea una cuenta</h2>
-  <input class="form-register__input" id="txtName" placeholder="Nombre" type="text" required>
-  <input class="form-register__input" id="txtApellidos" placeholder="Apellidos" type="text" required>
-  <input class="form-register__input" id="txtCorreo" placeholder="Apellidos" type="text" required>
-  <input class="form-register__input" id="txtPassword" placeholder="Contraseña" type="password" required>
-  <input class="form-register__input" id="txtPassword" placeholder="Confirme Contraseña" type="password" required>
-  <label for="txtDate">Feha de Nacimiento</label>
+  <input class="form-register__input" placeholder="Nombre" type="text" required>
+  <input class="form-register__input" placeholder="Apellido paterno" type="text" required>
+  <input class="form-register__input" placeholder="Apellido materno" type="text" required>
+  <input class="form-register__input" placeholder="Correo electrónico" type="email" required>
+  <input class="form-register__input" placeholder="Contraseña" type="password" required>
+  <input class="form-register__input" placeholder="Confirme Contraseña" type="password" required>
+  <label for="txtDate">Fecha de Nacimiento</label>
   <input class="form-register__input" type="date" name="" id="txtDate" required>
   <button class="form-register__submit" type="submit">Registrarse</button>
-  <a class="form-register__login" [routerLink]="['/welcome','contact']">Ya tengo una cuenta</a>
+  <a class="form-register__login pointer" [routerLink]="['/welcome','contact']">Ya tengo una cuenta</a>
 </form>
