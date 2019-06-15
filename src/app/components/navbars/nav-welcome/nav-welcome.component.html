@@ -7,6 +7,9 @@
         
         <nav *ngIf="toggled" class="sidemenu">
             <ul>
+                <li *ngIf="nombre" class="sidemenu__item" routerLinkActive="sidemenu__link--active">
+                    <a class="sidemenu__link" [routerLink]="['/welcome','profile']">{{nombre}}</a>
+                </li>
                 <li class="sidemenu__item" routerLinkActive="sidemenu__link--active">
                     <a [routerLink]="['/welcome','landing']" class="sidemenu__link">Home</a>
                 </li>
@@ -25,14 +28,20 @@
                 <li class="sidemenu__item" routerLinkActive="sidemenu__link--active">
                     <a [routerLink]="['/welcome','tips']" class="sidemenu__link">Tips</a>
                 </li>
-                <li class="sidemenu__item" routerLinkActive="sidemenu__link--active">
+                <li *ngIf="!nombre" class="sidemenu__item" routerLinkActive="sidemenu__link--active">
                     <a [routerLink]="['/welcome','contact']" class="sidemenu__link">Iniciar sesión</a>
+                </li>
+                <li *ngIf="nombre" class="sidemenu__item" routerLinkActive="sidemenu__link--active">
+                    <a (click)="cerrarSesion()" class="sidemenu__link">Cerrar sesión</a>
                 </li>
             </ul>
         </nav>
         
         <nav class="menu-normal">
             <ul>
+                <li *ngIf="nombre" routerLinkActive="active">
+                    <a >{{nombre}}</a>
+                </li>
                 <li routerLinkActive="active">
                     <a [routerLink]="['/welcome','landing']">Home</a>
                 </li>
@@ -51,8 +60,11 @@
                 <li routerLinkActive="active">
                     <a [routerLink]="['/welcome','tips']">Tips</a>
                 </li>
-                <li routerLinkActive="active">
+                <li *ngIf="!nombre" routerLinkActive="active">
                     <a [routerLink]="['/welcome','contact']">Iniciar Sesion</a>
+                </li>
+                <li *ngIf="nombre" routerLinkActive="active">
+                    <a (click)="cerrarSesion()">Cerrar sesión</a>
                 </li>
             </ul>
         </nav>

@@ -714,7 +714,7 @@ footer section div ul li a, .tel {
 }
 
 .form--mine__error {
-    font-size: .5rem;
+    font-size: .8rem;
     color: var(--color-warn);
 }
 

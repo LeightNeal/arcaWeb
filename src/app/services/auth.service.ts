@@ -6,7 +6,7 @@ import { AngularFireAuth } from '@angular/fire/auth';
 })
 export class AuthService {
 
-  constructor(private auth: AngularFireAuth) { }
+  constructor(public auth: AngularFireAuth) { }
 
   iniciarSesion(email: string, password: string) {
     return this.auth.auth.signInWithEmailAndPassword(email, password);
@@ -14,5 +14,9 @@ export class AuthService {
 
   registrarCuenta(email: string, password: string) {
     return this.auth.auth.createUserWithEmailAndPassword(email, password);
+  }
+
+  cerrarSesion() {
+    return this.auth.auth.signOut();
   }
 }

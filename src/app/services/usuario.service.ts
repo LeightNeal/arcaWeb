@@ -13,4 +13,7 @@ export class UsuarioService {
     return this.database.database.ref(`usuarios/${usuario.id}`).set(usuario);
   }
 
+  obtenerUsuario(id: string) {
+    return this.database.object(`usuarios/${id}`).valueChanges();
+  }
 }
