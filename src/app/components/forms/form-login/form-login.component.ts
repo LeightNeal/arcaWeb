@@ -28,6 +28,7 @@ export class FormLoginComponent implements OnInit {
             data => {
               alert('Iniciaste sesión');
               localStorage.setItem('usuarioActual', JSON.stringify(data));
+              location.reload();
             }, error => console.log(error));
         }
       } catch (error) {

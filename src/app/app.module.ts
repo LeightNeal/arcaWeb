@@ -40,6 +40,7 @@ import { CardAdoptComponent } from './components/cards/card-adopt/card-adopt.com
 import { FormContactComponent } from './components/forms/form-contact/form-contact.component';
 import { FormRegisterComponent } from './pages/welcome/form-register/form-register.component';
 import { CardTipComponent } from './components/cards/card-tip/card-tip.component';
+import { PerfilComponent } from './pages/welcome/perfil/perfil/perfil.component';
 
 @NgModule({
   declarations: [
@@ -75,7 +76,8 @@ import { CardTipComponent } from './components/cards/card-tip/card-tip.component
     CardAdoptComponent,
     FormContactComponent,
     FormRegisterComponent,
-    CardTipComponent
+    CardTipComponent,
+    PerfilComponent
   ],
   imports: [
     BrowserModule,

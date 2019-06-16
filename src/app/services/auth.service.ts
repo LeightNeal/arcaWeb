@@ -19,4 +19,9 @@ export class AuthService {
   cerrarSesion() {
     return this.auth.auth.signOut();
   }
+
+  obtenerEstado() {
+    return this.auth.authState;
+  }
+
 }

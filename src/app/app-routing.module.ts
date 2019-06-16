@@ -14,6 +14,8 @@ import { AdoptACatComponent } from './pages/welcome/adopt-acat/adopt-acat.compon
 import { SinglePostComponent } from '../app/pages/single-post/single-post.component';
 import {IsMineComponent} from '../app/pages/is-mine/is-mine.component';
 import {FormRegisterComponent} from '../app/pages/welcome/form-register/form-register.component';
+import { PerfilComponent } from './pages/welcome/perfil/perfil/perfil.component';
+import { PerfilGuard } from './guards/perfil.guard';
 
 const welcomeRoutes: Routes = [
   {path: 'landing', component: LandingComponent},
@@ -29,6 +31,7 @@ const welcomeRoutes: Routes = [
   {path: 'is-mine', component: IsMineComponent},
   {path: 'single-post', component: SinglePostComponent},
   {path: 'register', component: FormRegisterComponent},
+  {path: 'perfil', component: PerfilComponent, loadChildren: './modules/perfil/perfil.module#PerfilModule', canActivate: [PerfilGuard]},
   {path: '', pathMatch: 'full', redirectTo: 'landing'}
 ];
 

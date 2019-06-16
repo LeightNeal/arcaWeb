@@ -8,7 +8,7 @@
         <nav *ngIf="toggled" class="sidemenu">
             <ul>
                 <li *ngIf="nombre" class="sidemenu__item" routerLinkActive="sidemenu__link--active">
-                    <a class="sidemenu__link" [routerLink]="['/welcome','profile']">{{nombre}}</a>
+                    <a class="sidemenu__link" [routerLink]="['/welcome','perfil']">{{nombre}}</a>
                 </li>
                 <li class="sidemenu__item" routerLinkActive="sidemenu__link--active">
                     <a [routerLink]="['/welcome','landing']" class="sidemenu__link">Home</a>
@@ -40,7 +40,7 @@
         <nav class="menu-normal">
             <ul>
                 <li *ngIf="nombre" routerLinkActive="active">
-                    <a >{{nombre}}</a>
+                    <a [routerLink]="['/welcome', 'perfil']">{{nombre}}</a>
                 </li>
                 <li routerLinkActive="active">
                     <a [routerLink]="['/welcome','landing']">Home</a>
