@@ -5,6 +5,7 @@ export class Usuario {
         public apellidoMaterno: string,
         public correo: string,
         public fecha: string,
+        public tipo: number,
         public id?: string,
     ) {}
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Usuario } from 'src/app/models/usuario';
 
 @Component({
   selector: 'app-dates',
@@ -6,8 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styles: []
 })
 export class DatesComponent implements OnInit {
+  usuario: Usuario;
 
-  constructor() { }
+  constructor() {
+    this.usuario = JSON.parse(localStorage.getItem('usuarioActual'));
+  }
 
   ngOnInit() {
   }

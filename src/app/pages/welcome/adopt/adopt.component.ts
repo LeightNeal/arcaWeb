@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PetService } from 'src/app/services/pet.service';
 import { Mascota } from 'src/app/models/mascota';
+import { Usuario } from 'src/app/models/usuario';
 
 @Component({
   selector: 'app-adopt',
@@ -10,8 +11,12 @@ import { Mascota } from 'src/app/models/mascota';
 export class AdoptComponent implements OnInit {
 
   mascotas: Mascota[];
+  usuario: Usuario;
+  showModal: boolean;
 
   constructor(private petService: PetService) {
+    this.usuario = JSON.parse(localStorage.getItem('usuarioActual'));
+    this.showModal = false;
   }
 
   ngOnInit() {}
@@ -22,6 +27,10 @@ export class AdoptComponent implements OnInit {
       this.mascotas = data;
       console.log(this.mascotas);
     }, error => console.log(error));
+  }
+
+  changeState(state: boolean) {
+    this.showModal = state;
   }
 
 }

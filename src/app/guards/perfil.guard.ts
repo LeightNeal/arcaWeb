@@ -16,7 +16,7 @@ export class PerfilGuard implements CanActivate {
       return true;
     }
 
-    this.router.navigate(['/welcome', 'landing'], {queryParams: {returnUrl: state.url}});
+    this.router.navigate(['/welcome', 'landing']);
     return false;
   }
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Mascota } from 'src/app/models/mascota';
 
 @Component({
@@ -8,10 +8,18 @@ import { Mascota } from 'src/app/models/mascota';
 })
 export class CardAdoptComponent implements OnInit {
   @Input() mascota: Mascota;
+  @Input() login: any;
+  @Output() adopt: EventEmitter<boolean>;
 
-  constructor() { }
+  constructor() {
+    this.adopt = new EventEmitter();
+  }
 
   ngOnInit() {
+  }
+
+  sendModalRequest() {
+    this.adopt.emit(true);
   }
 
 }

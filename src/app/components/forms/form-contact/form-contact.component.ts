@@ -69,7 +69,8 @@ export class FormContactComponent implements OnInit {
       `${this.formRegistro.controls['apellidoPaterno'].value}`,
       `${this.formRegistro.controls['apellidoMaterno'].value}`,
       `${this.formRegistro.controls['correo'].value}`,
-      `${this.formRegistro.controls['fecha'].value}`
+      `${this.formRegistro.controls['fecha'].value}`,
+      3
     );
   }
 

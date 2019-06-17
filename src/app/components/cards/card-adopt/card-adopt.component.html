@@ -12,6 +12,7 @@
     <h5>Sexo: {{mascota.sexo}}</h5>
   </section>
   <footer class="card-adopt__footer centered-layout">
-    <a>Ver más</a>
+    <p *ngIf="!login">Para adoptar, inicia sesión.</p>
+    <p *ngIf="login" (click)="sendModalRequest()">Adoptar</p>
   </footer>
 </article>

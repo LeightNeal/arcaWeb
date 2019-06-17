@@ -1,3 +1,5 @@
+import { Usuario } from './usuario';
+
 export class Mascota {
     constructor (
         public id: number,
@@ -6,6 +8,8 @@ export class Mascota {
         public sexo: string,
         public status: string,
         public tipo: string,
-        public foto?: any
+        public foto?: any,
+        public propietario?: Usuario,
+        public interesado?: Usuario
     ) {}
 }

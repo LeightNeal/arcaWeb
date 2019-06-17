@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { AngularFireDatabase } from '@angular/fire/database';
 import { Usuario } from '../models/usuario';
+import { filter } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -14,6 +15,7 @@ export class UsuarioService {
   }
 
   obtenerUsuario(id: string) {
-    return this.database.object(`usuarios/${id}`).valueChanges();
+    return this.database.object(`usuarios/${id}`).valueChanges()
+    .pipe(filter((usuario: Usuario) => usuario.tipo === 3));
   }
 }
