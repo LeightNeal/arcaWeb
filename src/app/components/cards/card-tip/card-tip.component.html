@@ -1,10 +1,11 @@
 <div class="container">
   <div class="card-tip">
-    <img src="../../../../assets/img/gatoAdopcion4444.jpg" alt="imagen tip" class="img-tip">
+    <img [src]="tip.img" alt="imagen tip" class="img-tip">
     <img src="https://img.icons8.com/color/24/000000/idea.png" class="icon-tip">
-    <p class="content-tip">
-      Reconoce que no puedes controlar a la otra persona. Tu reacción inmediata al saber que la otra persona no te ama de la misma forma podría ser pensar “¡Haré que me ame!”. Este tipo de pensamiento es muy natural, pero también es incorrecto e inútil. Lo único en la vida que puedes controlar son tus propias acciones y respuestas. No puedes convencer, discutir o acosar a alguien para que sienta algo que no siente.
-    </p>
+    <section>
+      <h3>{{tip.title}}</h3>
+      <p>{{tip.contenido}}</p>
+    </section>
   </div>
 </div>
 

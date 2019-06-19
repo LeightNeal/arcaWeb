@@ -1,17 +1,11 @@
 <div class="singlePost-grid singlePost-card">
   <figure>
-    <img src="../../../assets/img/noticia2.jpg" alt="noticia" class="singlePost-image">
+    <img [src]="noticia.imagen" alt="noticia" class="singlePost-image">
   </figure>
   <div class="singlePost-new">
-    <h2>Campaña</h2>
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae asperiores, animi, incidunt nisi,
-    consectetur repellendus ea ipsam unde cumque totam vitae quaerat? Mollitia molestias praesentium 
-    fugiat doloribus? Cupiditate, possimus modi!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae asperiores, animi, incidunt nisi,
-    consectetur repellendus ea ipsam unde cumque totam vitae quaerat? Mollitia molestias praesentium 
-    fugiat doloribus? Cupiditate, possimus modi!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae asperiores, animi, incidunt nisi,
-    consectetur repellendus ea ipsam unde cumque totam vitae quaerat? Mollitia molestias praesentium 
-    fugiat doloribus? Cupiditate, possimus modi!
+    <h2>{{noticia.titulo}}</h2>
+    <h4>{{noticia.subtitulo}}</h4>
+    <p>{{noticia.contenido}}</p>
+    <a class="regresar-noticias" [routerLink]="['/welcome','news']">Regresar</a>
   </div>
 </div>

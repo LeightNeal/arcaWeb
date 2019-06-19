@@ -1,12 +1,12 @@
 <article class="card-new-grid card--new">
   <figure class="card--new__figure">
-    <img src="../../../assets/img/noticia2.jpg" alt="noticia">
+    <img [src]="noticia.imagen" alt="foto_noticia">
   </figure>
   <header class="card--new__header">
-    <a [routerLink]="['/welcome','single-post']" class="new-title"><h3>Jornada especial de peluquería</h3></a>
-    <small>01/06/2019</small>
+    <a [routerLink]="['/welcome','single-post', noticia.id]" class="new-title"><h3>{{noticia.titulo}}</h3></a>
+    <small>{{noticia.subtitulo}}</small>
   </header>
   <section class="card--new__content">
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae asperiores, animi, incidunt nisi, consectetur repellendus ea ipsam unde cumque totam vitae quaerat? Mollitia molestias praesentium fugiat doloribus? Cupiditate, possimus modi!</p>
+    <p>{{noticia.contenido}}</p>
   </section>
 </article>

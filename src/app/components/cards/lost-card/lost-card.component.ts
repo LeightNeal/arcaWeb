@@ -1,4 +1,6 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
+import { Perdido } from 'src/app/models/perdido';
+import { Usuario } from 'src/app/models/usuario';
 
 @Component({
   selector: 'app-lost-card',
@@ -7,9 +9,12 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class LostCardComponent implements OnInit {
   @Output() emitModal: EventEmitter<boolean>;
+  @Input() perdido: Perdido;
+  login: Usuario;
 
   constructor() { 
     this.emitModal = new EventEmitter();
+    this.login = JSON.parse(localStorage.getItem('usuarioActual'));
   }
 
   ngOnInit() {

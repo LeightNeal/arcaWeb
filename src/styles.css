@@ -2416,4 +2416,8 @@ body, html {
     color: #fff;
 }
 
-
+.regresar-noticias{
+    color: var(--color-warn);
+    padding: 1rem 2rem;
+    text-align: center;
+}

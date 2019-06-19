@@ -20,4 +20,7 @@ export class PetService {
     .valueChanges().pipe(map(data => data.filter((item: Mascota) => item.sexo === sexo)));
   }
 
+  obtenerMascotarPerdidas() {
+    return this.database.list('perdidos').valueChanges();
+  }
 }

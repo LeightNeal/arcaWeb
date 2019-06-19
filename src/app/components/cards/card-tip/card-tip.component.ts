@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Tip } from 'src/app/models/tip';
 
 @Component({
   selector: 'app-card-tip',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styles: []
 })
 export class CardTipComponent implements OnInit {
+  @Input() tip: Tip;
 
   constructor() { }
 

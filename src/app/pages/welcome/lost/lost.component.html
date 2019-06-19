@@ -6,9 +6,6 @@
     </div>
   </section>
   <section class="container-losts">
-    <app-lost-card (emitModal)="changeState($event)"></app-lost-card>
-    <app-lost-card (emitModal)="changeState($event)"></app-lost-card>
-    <app-lost-card (emitModal)="changeState($event)"></app-lost-card>
-    <app-lost-card (emitModal)="changeState($event)"></app-lost-card>
+    <app-lost-card *ngFor="let perdido of perdidos" (emitModal)="changeState($event)" [perdido]="perdido"></app-lost-card>
   </section>
 </div>

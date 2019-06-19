@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Tip } from 'src/app/models/tip';
+import { TipService } from 'src/app/services/tip.service';
 
 @Component({
   selector: 'app-tips',
@@ -6,8 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styles: []
 })
 export class TipsComponent implements OnInit {
+  tips: Tip[];
 
-  constructor() { }
+  constructor(private tipService: TipService) {
+    this.tipService.obtenerTips()
+    .subscribe( (data: Tip[]) => this.tips = data, error => console.log(error));
+  }
 
   ngOnInit() {
   }

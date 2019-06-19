@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Perdido } from 'src/app/models/perdido';
+import { PetService } from 'src/app/services/pet.service';
 
 @Component({
   selector: 'app-lost',
@@ -7,8 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LostComponent implements OnInit {
   show = false;
+  perdidos: Perdido[];
 
-  constructor() { }
+  constructor(private petService: PetService) {
+    this.petService.obtenerMascotarPerdidas()
+    .subscribe((data: Perdido[]) => this.perdidos = data, error => console.log(error));
+  }
 
   ngOnInit() {
   }

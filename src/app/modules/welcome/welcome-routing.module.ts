@@ -28,7 +28,7 @@ const routes: Routes = [
   {path: 'contact', component: ContactComponent},
   {path: 'login', component: LoginComponent},
   {path: 'is-mine', component: IsMineComponent},
-  {path: 'single-post', component: SinglePostComponent},
+  {path: 'single-post/:id', component: SinglePostComponent},
   {path: 'register', component: FormRegisterComponent},
   {path: 'perfil', component: PerfilComponent, loadChildren: '../perfil/perfil.module#PerfilModule', canActivate: [PerfilGuard]},
   {path: '', pathMatch: 'full', redirectTo: 'landing'}

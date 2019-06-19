@@ -5,8 +5,6 @@
     </header>
   </section>
   <section>
-    <app-card-tip></app-card-tip>
-    <app-card-tip></app-card-tip>
-    <app-card-tip></app-card-tip>
+    <app-card-tip *ngFor="let tip of tips" [tip]="tip"></app-card-tip>
   </section>
 </section>

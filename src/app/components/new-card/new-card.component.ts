@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Noticia } from 'src/app/models/noticia';
 
 @Component({
   selector: 'app-new-card',
@@ -6,8 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styles: []
 })
 export class NewCardComponent implements OnInit {
+  @Input() noticia: Noticia;
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
   }

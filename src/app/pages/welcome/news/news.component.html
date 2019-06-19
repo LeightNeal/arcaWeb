@@ -6,10 +6,7 @@
   </section>
   <section class="news">
     <div class="container-news">
-      <app-new-card></app-new-card>
-      <app-new-card></app-new-card>
-      <app-new-card></app-new-card>
-      <app-new-card></app-new-card>
+      <app-new-card *ngFor="let noticia of noticias" [noticia]="noticia"></app-new-card>
     </div>
   </section>
 </section>

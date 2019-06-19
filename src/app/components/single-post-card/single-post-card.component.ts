@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Noticia } from 'src/app/models/noticia';
 
 @Component({
   selector: 'app-single-post-card',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styles: []
 })
 export class SinglePostCardComponent implements OnInit {
+  @Input() noticia: Noticia;
 
   constructor() { }
 
