@@ -4,7 +4,19 @@
       <h3>Ayuda a tus mascotas</h3>
     </header>
   </section>
-  <section>
+  <section *ngIf="!tips" class="carga">
+      <div id="cssload-loader">
+        <div class="cssload-dot"></div>
+        <div class="cssload-dot"></div>
+        <div class="cssload-dot"></div>
+        <div class="cssload-dot"></div>
+        <div class="cssload-dot"></div>
+        <div class="cssload-dot"></div>
+        <div class="cssload-dot"></div>
+        <div class="cssload-dot"></div>
+      </div>
+    </section>
+  <section *ngIf="tips">
     <app-card-tip *ngFor="let tip of tips" [tip]="tip"></app-card-tip>
   </section>
 </section>

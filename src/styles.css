@@ -1019,6 +1019,11 @@ color: white;
     margin-top: -3px;
 }
 
+.form-date label {
+    width: 100%;
+    text-align: center;
+}
+
 /* Banner de la página de citas */
 .centered-layout{
     background-color: #f2f3f8;
@@ -2420,4 +2425,13 @@ body, html {
     color: var(--color-warn);
     padding: 1rem 2rem;
     text-align: center;
+}
+
+.carga {
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

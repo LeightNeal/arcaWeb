@@ -5,7 +5,19 @@
       <h3>Ayúdanos a encontrarlos.</h3>
     </div>
   </section>
-  <section class="container-losts">
+  <section *ngIf="!perdidos" class="carga">
+      <div id="cssload-loader">
+        <div class="cssload-dot"></div>
+        <div class="cssload-dot"></div>
+        <div class="cssload-dot"></div>
+        <div class="cssload-dot"></div>
+        <div class="cssload-dot"></div>
+        <div class="cssload-dot"></div>
+        <div class="cssload-dot"></div>
+        <div class="cssload-dot"></div>
+      </div>
+    </section>
+  <section *ngIf="perdidos" class="container-losts">
     <app-lost-card *ngFor="let perdido of perdidos" (emitModal)="changeState($event)" [perdido]="perdido"></app-lost-card>
   </section>
 </div>

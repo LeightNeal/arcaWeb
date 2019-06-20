@@ -4,7 +4,19 @@
       <h3>Información que cura</h3>
     </header>
   </section>
-  <section class="news">
+  <section *ngIf="!noticias" class="carga">
+    <div id="cssload-loader">
+      <div class="cssload-dot"></div>
+      <div class="cssload-dot"></div>
+      <div class="cssload-dot"></div>
+      <div class="cssload-dot"></div>
+      <div class="cssload-dot"></div>
+      <div class="cssload-dot"></div>
+      <div class="cssload-dot"></div>
+      <div class="cssload-dot"></div>p
+    </div>
+  </section>
+  <section *ngIf="noticias" class="news">
     <div class="container-news">
       <app-new-card *ngFor="let noticia of noticias" [noticia]="noticia"></app-new-card>
     </div>
