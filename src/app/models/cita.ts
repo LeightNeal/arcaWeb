@@ -5,5 +5,5 @@ export class Cita{
         public nombreMascota: string,
         public edadMascota: string,
         public fecha: string
-    ) {}    
+    ) {}
 }

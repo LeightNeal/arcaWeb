@@ -2341,6 +2341,7 @@ body, html {
 .adoptados {
     width: 100%;
     height: calc(var(--banner-height) - 5vh);
+    position: relative;
 }
 
 /* Bloqueo de la página de citas */
@@ -2435,3 +2436,33 @@ body, html {
     align-items: center;
     justify-content: center;
 }
+
+.tabla-citas {
+    width: 95%;
+    height: auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 1vmin .4vmin rgba(10, 10, 10, .4);
+}
+
+.tabla-citas__encabezado {
+    background: var(--color-primary-dark);
+    border-bottom: 1vmin solid #fff;
+}
+
+.tabla-citas__encabezado th {
+    color: #fff;
+    padding: 1rem 1.5rem;
+}
+
+.tabla-citas__fila td {
+    padding: 1rem 1.5rem;
+}
+
+.tabla-citas__fila:nth-child(odd) {
+    background: var(--color-primary-light);
+}
+
+.tabla-citas__fila:nth-child(odd) td {
+    color: #fff;
+}
+
