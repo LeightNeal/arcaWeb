@@ -15,6 +15,7 @@ import { SinglePostComponent } from 'src/app/pages/single-post/single-post.compo
 import { FormRegisterComponent } from 'src/app/pages/welcome/form-register/form-register.component';
 import { PerfilComponent } from 'src/app/pages/welcome/perfil/perfil/perfil.component';
 import { PerfilGuard } from 'src/app/guards/perfil.guard';
+import { RequestComponent } from 'src/app/components/request/request.component';
 
 const routes: Routes = [
   {path: 'landing', component: LandingComponent},
@@ -30,6 +31,7 @@ const routes: Routes = [
   {path: 'is-mine', component: IsMineComponent},
   {path: 'single-post/:id', component: SinglePostComponent},
   {path: 'register', component: FormRegisterComponent},
+  {path: 'request', component: RequestComponent, loadChildren: '../adopcion/adopcion.module#AdopcionModule', canActivate: [PerfilGuard]}
   {path: 'perfil', component: PerfilComponent, loadChildren: '../perfil/perfil.module#PerfilModule', canActivate: [PerfilGuard]},
   {path: '', pathMatch: 'full', redirectTo: 'landing'}
 ];

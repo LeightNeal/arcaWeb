@@ -1,4 +1,4 @@
-<app-modal-adopt *ngIf="showModal" (closeModal)="changeState($event)"></app-modal-adopt>
+<app-modal-adopt *ngIf="showModal" [mascota]="mascotaElegida" (closeModal)="changeState($event)"></app-modal-adopt>
 <div class="centered-layout ">
   <section class="banner-adopt">
     <div class="container banner-adopt__content">

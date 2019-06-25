@@ -13,6 +13,7 @@ export class AdoptComponent implements OnInit {
   mascotas: Mascota[];
   usuario: Usuario;
   showModal: boolean;
+  mascotaElegida: Mascota;
 
   constructor(private petService: PetService) {
     this.usuario = JSON.parse(localStorage.getItem('usuarioActual'));
@@ -29,8 +30,9 @@ export class AdoptComponent implements OnInit {
     }, error => console.log(error));
   }
 
-  changeState(state: boolean) {
-    this.showModal = state;
+  changeState(evento: any) {
+    this.showModal = evento.mostrarModal;
+    this.mascotaElegida = evento.mascota;
   }
 
 }

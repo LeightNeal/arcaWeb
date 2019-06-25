@@ -8,8 +8,9 @@ export class Mascota {
         public sexo: string,
         public status: string,
         public tipo: string,
+        public edad: string,
         public foto?: any,
         public propietario?: Usuario,
-        public interesado?: Usuario
+        public interesados?: Usuario
     ) {}
 }

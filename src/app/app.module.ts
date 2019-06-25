@@ -13,7 +13,6 @@ import { FooterComponent } from './components/footer/footer.component';
 import { WelcomeComponent } from './pages/welcome/welcome/welcome.component';
 import { FormAdoptComponent } from './components/forms/form-adopt/form-adopt.component';
 import { AdoptPetComponent } from './pages/welcome/adopt-pet/adopt-pet.component';
-
 @NgModule({
   declarations: [
     AppComponent,

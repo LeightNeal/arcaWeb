@@ -9,7 +9,7 @@ import { Mascota } from 'src/app/models/mascota';
 export class CardAdoptComponent implements OnInit {
   @Input() mascota: Mascota;
   @Input() login: any;
-  @Output() adopt: EventEmitter<boolean>;
+  @Output() adopt: EventEmitter<any>;
 
   constructor() {
     this.adopt = new EventEmitter();
@@ -19,7 +19,8 @@ export class CardAdoptComponent implements OnInit {
   }
 
   sendModalRequest() {
-    this.adopt.emit(true);
+    const emisor = {mascota: this.mascota, mostrarModal: true};
+    this.adopt.emit(emisor);
   }
 
 }

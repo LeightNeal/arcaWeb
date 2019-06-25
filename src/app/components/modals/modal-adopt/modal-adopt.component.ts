@@ -1,4 +1,5 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
+import { Mascota } from 'src/app/models/mascota';
 
 @Component({
   selector: 'app-modal-adopt',
@@ -6,17 +7,19 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
   styles: []
 })
 export class ModalAdoptComponent implements OnInit {
-  @Output() closeModal: EventEmitter<boolean>;
+  @Output() closeModal: EventEmitter<any>;
+  @Input() mascota: Mascota;
 
   constructor() { 
     this.closeModal = new EventEmitter();
   }
 
   ngOnInit() {
+    console.log(this.mascota)
   }
 
   sendCloseModal() {
-    this.closeModal.emit(false);
+    this.closeModal.emit({mascota: this.mascota, mostrarModal: false});
   }
 
 }
