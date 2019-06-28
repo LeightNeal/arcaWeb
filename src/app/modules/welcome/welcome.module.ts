@@ -34,6 +34,7 @@ import { CardTipComponent } from 'src/app/components/cards/card-tip/card-tip.com
 import { PerfilComponent } from 'src/app/pages/welcome/perfil/perfil/perfil.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ModalAdoptComponent } from 'src/app/components/modals/modal-adopt/modal-adopt.component';
+import { RequestComponent } from 'src/app/components/request/request.component';
 
 @NgModule({
   declarations: [
@@ -68,7 +69,7 @@ import { ModalAdoptComponent } from 'src/app/components/modals/modal-adopt/modal
     CardTipComponent,
     PerfilComponent,
     ModalAdoptComponent,
-
+    RequestComponent
   ],
   imports: [
     CommonModule,

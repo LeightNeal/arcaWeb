@@ -31,7 +31,8 @@ const routes: Routes = [
   {path: 'is-mine', component: IsMineComponent},
   {path: 'single-post/:id', component: SinglePostComponent},
   {path: 'register', component: FormRegisterComponent},
-  {path: 'request', component: RequestComponent, loadChildren: '../adopcion/adopcion.module#AdopcionModule', canActivate: [PerfilGuard]}
+// tslint:disable-next-line: max-line-length
+  {path: 'request/:id', component: RequestComponent, loadChildren: '../adopcion/adopcion.module#AdopcionModule', canActivate: [PerfilGuard]},
   {path: 'perfil', component: PerfilComponent, loadChildren: '../perfil/perfil.module#PerfilModule', canActivate: [PerfilGuard]},
   {path: '', pathMatch: 'full', redirectTo: 'landing'}
 ];
