@@ -15,6 +15,7 @@
     --color-text: #222627;
     --color-border: #cfcfcf;
     --color-secondary: #AF1E38;
+    --color-disabled: #888;
     /* medidas */
     --header-height: 4rem;
     --top: 10vh;
@@ -2469,6 +2470,112 @@ body, html {
 /* Módulo de solicitudes de adopción */
 .request-container {
     width: 100%;
-    height: 100vh;
+    height: auto;
+    padding-top: calc(var(--header-height) * 1.5);
+    padding-bottom: 2rem;
     background: linear-gradient(45deg, var(--color-success), var(--color-success-light));
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.request__nav {
+    width: 100%;
+    background: transparent;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.request__item {
+    padding: 1rem 2rem;
+    margin-left: 2.5rem;
+    position: relative;
+    background: #fff;
+}
+
+.request__item::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -1.8rem;
+    border-top: 1.8rem solid #fff;
+    border-bottom: 1.8rem solid #fff;
+    border-left: transparent solid 1.8rem;
+}
+
+.request__item::after {
+    content: '';
+    position: absolute;
+    top:0;
+    right: -1.8rem;
+    border-top: 1.8rem solid transparent;
+    border-bottom: 1.8rem solid transparent;
+    border-left: 1.9rem solid #fff;
+}
+
+.request__link {
+    color: var(--color-disabled);
+}
+
+.request__number {
+    padding: 1vmin 2vmin;
+    border-radius: 50%;
+    background: var(--color-disabled);
+    color: #fff;
+}
+
+.request__number:first-child {
+    padding: .8vmin 2vmin;
+}
+
+.request__active > .request__link{
+    color: var(--color-success);
+}
+
+.request__active .request__number {
+    background: var(--color-success);
+}
+
+/* Página de datos personales en el módulo de solicitud de adopción */
+
+.container-data {
+    width: 100%;
+    background: transparent;
+}
+
+.form-data {
+    padding: 1rem;
+    border-radius: 2vmin;
+    width: 40rem;
+    background: white;
+}
+
+.form-data h3 {
+    text-align: center;
+}
+
+.form-data__input {
+    width: 100%;
+    border: none;
+    background: #d2dfdf;
+    padding: .8rem;
+}
+
+.form-data__submit {
+    padding: .5rem 1rem;
+    color: #fff;
+    background: var(--color-success);
+    border: none;
+    margin: 0 auto;
+    border-radius: 1vmin;
+}
+
+.list-points {
+    padding: 1rem 1.5rem;
+}
+
+.list-points li{
+    list-style: decimal;
+    line-height: 1.5rem;
 }

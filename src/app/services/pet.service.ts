@@ -24,6 +24,10 @@ export class PetService {
     return this.database.list('mascotas', ref => ref.orderByChild('tipo').equalTo(tipo)).valueChanges();
   }
 
+  buscarMascotaPorId(id: number) {
+    return this.database.object(`mascotas/${id}`).valueChanges();
+  }
+
   obtenerMascotarPerdidas() {
     return this.database.list('perdidos').valueChanges();
   }

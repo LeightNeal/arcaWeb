@@ -3,10 +3,10 @@
         <div class="container-footer">
             <div class="container-form-footer">
                 <h3 class="contact-title">Contacto</h3>
-                <form class="form-footer" method="post" enctype="multipart/form-data">
-                    <input class="input" placeholder="Nombre" class="in" type="text" name="nombre" value="">
-                    <input class="input" placeholder="Email" class="in" type="email" name="email" value="">
-                    <textarea class="textarea" placeholder="Mensaje" name="mensaje"></textarea>
+                <form class="form-footer" method="post" enctype="multipart/form-data" (ngSubmit)="guardarContacto()">
+                    <input class="input" #txtFooterNombre placeholder="Nombre" class="in" type="text" name="nombre" value="">
+                    <input class="input" #txtFooterEmail placeholder="Email" class="in" type="email" name="email" value="">
+                    <textarea class="textarea" #txtFooterMensaje placeholder="Mensaje" name="mensaje"></textarea>
                     <div id="mensaje4" class="success"> <i class="fa fa-check">Mensaje Enviado</i> </div>
                     <input class="input submit" type="submit" id="bEnviar" value="ENVIAR">
                 </form>
