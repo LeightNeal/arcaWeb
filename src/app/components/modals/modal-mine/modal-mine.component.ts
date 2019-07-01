@@ -1,4 +1,5 @@
-import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output, Input } from '@angular/core';
+import { Perdido } from 'src/app/models/perdido';
 
 @Component({
   selector: 'app-modal-mine',
@@ -6,7 +7,8 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
   styles: []
 })
 export class ModalMineComponent implements OnInit {
-  @Output() emitState: EventEmitter<boolean>;
+  @Input() perdido: Perdido;
+  @Output() emitState: EventEmitter<any>;
 
   constructor() { 
     this.emitState = new EventEmitter();
@@ -15,7 +17,7 @@ export class ModalMineComponent implements OnInit {
   ngOnInit() {
   }
 
-  bindState(state: boolean) {
+  bindState(state: any) {
     this.emitState.emit(state);
   }
 }

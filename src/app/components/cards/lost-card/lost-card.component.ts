@@ -8,7 +8,7 @@ import { Usuario } from 'src/app/models/usuario';
   styles: []
 })
 export class LostCardComponent implements OnInit {
-  @Output() emitModal: EventEmitter<boolean>;
+  @Output() emitModal: EventEmitter<any>;
   @Input() perdido: Perdido;
   login: Usuario;
 
@@ -21,7 +21,7 @@ export class LostCardComponent implements OnInit {
   }
 
   showModal() {
-    this.emitModal.emit(true);
+    this.emitModal.emit({mostrarModal: true, perdido: this.perdido});
   }
 
 }

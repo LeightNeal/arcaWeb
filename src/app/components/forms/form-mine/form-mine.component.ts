@@ -1,5 +1,9 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { Mascota } from 'src/app/models/mascota';
+import { Perdido } from 'src/app/models/perdido';
+import { SolicitudPerdido } from 'src/app/models/solicitud-perdido';
+import { SolicitudService } from 'src/app/services/solicitud.service';
 
 @Component({
   selector: 'app-form-mine',
@@ -7,10 +11,11 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
   styles: []
 })
 export class FormMineComponent implements OnInit {
-  @Output() closeModal: EventEmitter<boolean>;
+  @Input() perdido: Perdido;
+  @Output() closeModal: EventEmitter<any>;
   formMine: FormGroup;
 
-  constructor() {
+  constructor(private solicitudService: SolicitudService) {
     this.closeModal = new EventEmitter();
     this.formMine = new FormGroup({
       'name': new FormControl(null, Validators.required),
@@ -25,7 +30,29 @@ export class FormMineComponent implements OnInit {
   }
 
   emitCloseModal() {
-    this.closeModal.emit(false);
+    this.closeModal.emit({mostrarModal: false, perdido: this.perdido});
   }
 
+  construirObjeto(): SolicitudPerdido {
+    return {
+      id: Date.now(),
+      nombre: `${this.formMine.controls['name'].value}`,
+      correo: `${this.formMine.controls['email'].value}`,
+      telefono: `${this.formMine.controls['phone'].value}`,
+      mensaje: `${this.formMine.controls['comment'].value}`
+    };
+  }
+
+  async enviarSolicitud() {
+    try {
+      if (this.formMine.valid) {
+        await this.solicitudService.crearSolicitudPerdido(this.construirObjeto());
+        alert('Tu solicitud ha sido enviada');
+        this.emitCloseModal();
+      }
+    } catch (error) {
+      console.log(error);
+      this.emitCloseModal();
+    }
+  }
 }

@@ -10,6 +10,7 @@ import { PetService } from 'src/app/services/pet.service';
 export class LostComponent implements OnInit {
   show = false;
   perdidos: Perdido[];
+  elegido: Perdido;
 
   constructor(private petService: PetService) {
     this.petService.obtenerMascotarPerdidas()
@@ -19,7 +20,8 @@ export class LostComponent implements OnInit {
   ngOnInit() {
   }
 
-  changeState(state: boolean) {
-    this.show = state;
+  changeState(state: any) {
+    this.show = state.mostrarModal;
+    this.elegido = state.perdido;
   }
 }
