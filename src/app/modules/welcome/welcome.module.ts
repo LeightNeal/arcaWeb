@@ -69,7 +69,7 @@ import { RequestComponent } from 'src/app/components/request/request.component';
     CardTipComponent,
     PerfilComponent,
     ModalAdoptComponent,
-    RequestComponent
+    RequestComponent,
   ],
   imports: [
     CommonModule,

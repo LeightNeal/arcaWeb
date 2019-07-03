@@ -4,6 +4,7 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { AngularFireAuthModule } from '@angular/fire/auth';
+import { AngularFireStorageModule, StorageBucket } from '@angular/fire/storage';
 import { environment } from '../environments/environment';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -29,9 +30,12 @@ import { AdoptPetComponent } from './pages/welcome/adopt-pet/adopt-pet.component
     FormsModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    AngularFireStorageModule
   ],
-  providers: [],
+  providers: [
+    {provide: StorageBucket, useValue: environment.firebase.storageBucket}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
