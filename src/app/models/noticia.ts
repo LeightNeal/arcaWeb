@@ -4,6 +4,6 @@ export class Noticia{
         public titulo: string,
         public subtitulo: string,
         public contenido: string,
-        public imagen: string
+        public foto: string
     ) {}
 }

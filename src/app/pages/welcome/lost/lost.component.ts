@@ -47,7 +47,7 @@ export class LostComponent implements OnInit {
     this.elegido = state.perdido;
   }
 
-  modificarConocido() {
+  cambiarConocido() {
     this.conocido = !this.conocido;
   }
 

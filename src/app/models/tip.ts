@@ -3,6 +3,6 @@ export class Tip{
         public id: number,
         public title: string,
         public contenido: string,
-        public img: string
+        public foto: string
     ) {}
 }
