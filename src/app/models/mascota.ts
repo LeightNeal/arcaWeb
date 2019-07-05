@@ -11,6 +11,6 @@ export class Mascota {
         public edad: string,
         public foto?: any,
         public propietario?: Usuario,
-        public interesados?: Usuario
+        public interesados?: string[]
     ) {}
 }

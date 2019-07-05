@@ -2630,3 +2630,22 @@ body, html {
     height: 100%;
     object-fit: cover;
 }
+
+.table-interested {
+    width: 85%;
+    box-shadow: 0 0 1vmin .4vmin rgba(10, 10, 10, 0.4);
+    border-collapse: collapse;
+}
+
+.table-interested thead {
+    background: var(--color-success);
+    color: #fff;
+}
+
+.table-interested th, .table-interested td {
+    padding: .8rem 1.5rem;
+}
+
+.table-interested > tbody > tr:nth-child(odd) {
+    background: rgba(0, 171, 91, .1);
+}

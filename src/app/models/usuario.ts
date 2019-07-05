@@ -1,3 +1,5 @@
+import { Mascota } from './mascota';
+
 export class Usuario {
     constructor(
         public nombre: string,
@@ -7,5 +9,6 @@ export class Usuario {
         public fecha: string,
         public tipo: number,
         public id?: string,
+        public mascotasInteresadas?: Mascota[]
     ) {}
 }

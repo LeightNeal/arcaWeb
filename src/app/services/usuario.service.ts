@@ -18,4 +18,8 @@ export class UsuarioService {
     return this.database.object(`usuarios/${id}`).valueChanges()
     .pipe(filter((usuario: Usuario) => usuario.tipo === 3));
   }
+
+  actualizarUsuario(usuario: Usuario) {
+    return this.database.database.ref(`usuarios/${usuario.id}`).set(usuario);
+  }
 }

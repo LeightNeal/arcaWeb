@@ -9,7 +9,7 @@
     </main>
     <footer class="modal-adopt__footer">
       <a [routerLink]="['/welcome','request',mascota.id]" class="button-adopt full">Sí</a>
-      <button class="button-adopt ">En otro momento.</button>
+      <button class="button-adopt" (click)="seleccionarInteresado()">En otro momento.</button>
     </footer>
   </article>
 </section>

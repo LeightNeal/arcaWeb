@@ -31,4 +31,8 @@ export class PetService {
   obtenerMascotarPerdidas() {
     return this.database.list('perdidos').valueChanges();
   }
+
+  actualizarMascota(mascota: Mascota) {
+    return this.database.database.ref(`mascotas/${mascota.id}`).set(mascota);
+  }
 }
