@@ -31,4 +31,8 @@ export class SolicitudService {
   obtenerUrlFoto(path: any) {
     return this.storage.ref(`reportes/${path}`).getDownloadURL();
   }
+
+  obtenerJumbotron(id: string) {
+    return this.database.object(`web/${id}`).valueChanges();
+  }
 }

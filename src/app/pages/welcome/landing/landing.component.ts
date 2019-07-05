@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { SolicitudService } from 'src/app/services/solicitud.service';
+import { Jumbotron } from 'src/app/models/jumbotron';
 
 @Component({
   selector: 'app-landing',
@@ -6,8 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styles: []
 })
 export class LandingComponent implements OnInit {
+  jumbotron: Jumbotron;
 
-  constructor() { }
+  constructor(private solicitudService: SolicitudService) {
+    this.solicitudService.obtenerJumbotron('home').
+    subscribe((data: Jumbotron) => this.jumbotron = data, error => console.log(error));
+  }
 
   ngOnInit() {
   }

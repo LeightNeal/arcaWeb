@@ -113,9 +113,9 @@
 
 .jumbotron{
     height: var(--banner-height);
-    background: linear-gradient(45deg,rgba(105,76,146,.9), rgba(157,127,186,.9)) , url('assets/img/mujerAbrazandoPerro.jpg') left no-repeat;
+    background: linear-gradient(45deg,rgba(105,76,146,.9), rgba(157,127,186,.9)) , url("https://firebasestorage.googleapis.com/v0/b/arca-f09a2.appspot.com/o/web%2F1562343591552.jpg?alt=media&token=577900f2-1add-4e02-b540-a73200cbb21c") left no-repeat;
     background-size: cover;
-    background-blend-mode: color;
+    background-blend-mode: multiply;
     background-attachment: fixed;
 }
 
@@ -360,7 +360,7 @@ footer section div ul li a, .tel {
 .banner-adopt {
     width: 100%;
     height: var(--banner-height);
-    background: linear-gradient(45deg, var(--color-success), var(--color-success)), url('assets/img/Perros-abrazando-a-sus-Dueños-16-730x523.jpg') left no-repeat;
+    background: linear-gradient(45deg, var(--color-success), var(--color-success)), url("https://firebasestorage.googleapis.com/v0/b/arca-f09a2.appspot.com/o/web%2F1562343577295.jpg?alt=media&token=203b9f39-4b11-4c5d-9f9a-c7a5dc4c337d") left no-repeat;
     background-blend-mode: multiply;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
     position: relative;
@@ -596,7 +596,7 @@ footer section div ul li a, .tel {
 .banner-lost {
     width: 100%;
     height: var(--banner-height);
-    background: linear-gradient(45deg, var(--color-secondary), var(--color-warn)), url('assets/img/peroAdopcion444444.jpg') left no-repeat;
+    background: linear-gradient(45deg, var(--color-secondary), var(--color-warn)), url("https://firebasestorage.googleapis.com/v0/b/arca-f09a2.appspot.com/o/web%2F1562343850558.jpg?alt=media&token=d9e14936-c050-43d7-8f05-b99098648657") left no-repeat;
     background-size: cover;
     background-blend-mode: multiply;
     clip-path: polygon(0 0, 100% 0, 100% 90% , 50% 100%, 0 90%);
@@ -1156,7 +1156,7 @@ color: #9D7FBA;
 .banner-news {
     width: 100%;
     height: var(--banner-height);
-    background: linear-gradient(45deg ,var(--color-primary-dark) 60%, var(--color-primary-light)), url('assets/img/gatoAdopcion2222.jpg') left no-repeat;
+    background: linear-gradient(45deg ,var(--color-primary-dark) 60%, var(--color-primary-light)), url("https://firebasestorage.googleapis.com/v0/b/arca-f09a2.appspot.com/o/web%2F1562343632949.jpg?alt=media&token=02169803-dc5e-4611-82f0-fa677cb30662") left no-repeat;
     background-blend-mode: multiply;
     background-size: cover;
     background-attachment: fixed;
@@ -1277,7 +1277,7 @@ color: #9D7FBA;
 .banner-tips {
     width: 100%;
     height: var(--banner-height);
-    background: linear-gradient(45deg, var(--color-success-light), var(--color-success)), url('assets/img/gatoAdopcion11.jpg') left no-repeat;
+    background: linear-gradient(45deg, var(--color-success-light), var(--color-success)), url("https://firebasestorage.googleapis.com/v0/b/arca-f09a2.appspot.com/o/web%2F1562343829251.jpg?alt=media&token=0dcc71eb-4e59-4d45-8ce7-c3ffd2660550") left no-repeat;
     background-blend-mode: multiply;
     background-size: cover;
     background-position-x: center;
@@ -1435,7 +1435,7 @@ transition: .3s;
   .banner-login {
     width: 100%;
     height: var(--banner-height);
-    background: linear-gradient(45deg, #C05FA4, #EB9B96), url('assets/img/adoptaGato.jpg') left no-repeat;
+    background: linear-gradient(45deg, #C05FA4, #EB9B96), url("https://firebasestorage.googleapis.com/v0/b/arca-f09a2.appspot.com/o/web%2F1562343613277.jpg?alt=media&token=48d8d928-c86a-403d-b173-fca073fc2661") left no-repeat;
     background-blend-mode: multiply;
     background-size: cover;
     background-position-x: center;
@@ -1601,7 +1601,7 @@ input{
   .banner-register {
     width: 100%;
     height: var(--banner-height);
-    background: linear-gradient(45deg, #C05FA4 55%, #EB9B96 80%), url('./assets/img/perroAdoptado.jpg') left no-repeat;
+    background: linear-gradient(45deg, #C05FA4 55%, #EB9B96 80%), url("https://firebasestorage.googleapis.com/v0/b/arca-f09a2.appspot.com/o/web%2F1562343664254.jpg?alt=media&token=8de697e8-48ef-4ba3-9b2b-6033a3b78b6f") left no-repeat;
     background-blend-mode: multiply;
     background-size: cover;
     background-attachment: fixed;
