@@ -1,8 +1,8 @@
 <app-modal-mine *ngIf="show" (emitState)="changeState($event)" [perdido]="elegido"></app-modal-mine>
 <div class="centered-layout">
-  <section class="banner-lost">
+  <section class="banner-lost" #jumbotronLost>
     <div class="container banner-lost__content">
-      <h3>Realiza tu reporte aquí</h3>
+      <h3>{{jumbotron.slogan}}</h3>
     </div>
   </section>
   <section class="centered-layout">

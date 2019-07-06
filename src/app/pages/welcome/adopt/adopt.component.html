@@ -1,8 +1,8 @@
 <app-modal-adopt *ngIf="showModal" [mascota]="mascotaElegida" (closeModal)="changeState($event)"></app-modal-adopt>
 <div class="centered-layout ">
-  <section class="banner-adopt">
+  <section class="banner-adopt" #jumbotronAdopt>
     <div class="container banner-adopt__content">
-      <h3>Lleva a casa a un nuevo amigo</h3>
+      <h3>{{jumbotron.slogan}}</h3>
     </div>
   </section>
 

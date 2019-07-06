@@ -1,6 +1,6 @@
 <app-modal-adopt *ngIf="mostrarModal" [mascota]="mascotaElegida" (closeModal)="changeState($event)"></app-modal-adopt>
 <section class="centered-layout">
-  <section class="banner-adopt">
+  <section class="banner-adopt" #jumbotronAdopt>
     <div class="container banner-adopt__content">
       <h3>Lleva a casa a un nuevo minino</h3>
     </div>
