@@ -12,4 +12,7 @@ export class TipService {
     return this.database.list('tips').valueChanges();
   }
 
+  obtenerTipPorId(id: number) {
+    return this.database.object(`tips/${id}`).valueChanges();
+  }
 }

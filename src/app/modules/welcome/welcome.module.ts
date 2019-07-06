@@ -35,6 +35,7 @@ import { PerfilComponent } from 'src/app/pages/welcome/perfil/perfil/perfil.comp
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ModalAdoptComponent } from 'src/app/components/modals/modal-adopt/modal-adopt.component';
 import { RequestComponent } from 'src/app/components/request/request.component';
+import { TipComponent } from 'src/app/pages/welcome/tip/tip.component';
 
 @NgModule({
   declarations: [
@@ -70,6 +71,7 @@ import { RequestComponent } from 'src/app/components/request/request.component';
     PerfilComponent,
     ModalAdoptComponent,
     RequestComponent,
+    TipComponent
   ],
   imports: [
     CommonModule,

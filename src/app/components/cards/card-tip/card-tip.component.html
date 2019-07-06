@@ -4,7 +4,7 @@
     <img src="https://img.icons8.com/color/24/000000/idea.png" class="icon-tip">
     <section>
       <h3>{{tip.title}}</h3>
-      <p>{{tip.contenido}}</p>
+      <a [routerLink]="['/welcome','tip',tip.id]">{{tip.contenido}}</a>
     </section>
   </div>
 </div>

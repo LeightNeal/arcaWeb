@@ -23,7 +23,8 @@ export class TipsComponent implements OnInit {
     this.solicitudService.obtenerJumbotron('tips').subscribe(
       (data: Jumbotron) => {
         this.jumbotron = data;
-        this.renderer.setStyle(this.jumbotronTips.nativeElement, 'background', `linear-gradient(45deg, ${this.jumbotron.color2}, ${this.jumbotron.color1}), url(${this.jumbotron.img}) left no-repeat`);
+        this.renderer.setStyle(this.jumbotronTips.nativeElement, 'background', 
+        `linear-gradient(45deg, ${this.jumbotron.color2}, ${this.jumbotron.color1}), url(${this.jumbotron.img}) left no-repeat`);
         this.renderer.setStyle(this.jumbotronTips.nativeElement, 'background-size', 'cover');
       }, error => console.log(error)
     );

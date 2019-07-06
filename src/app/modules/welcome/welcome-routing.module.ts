@@ -16,6 +16,7 @@ import { FormRegisterComponent } from 'src/app/pages/welcome/form-register/form-
 import { PerfilComponent } from 'src/app/pages/welcome/perfil/perfil/perfil.component';
 import { PerfilGuard } from 'src/app/guards/perfil.guard';
 import { RequestComponent } from 'src/app/components/request/request.component';
+import { TipComponent } from 'src/app/pages/welcome/tip/tip.component';
 
 const routes: Routes = [
   {path: 'landing', component: LandingComponent},
@@ -30,6 +31,7 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'is-mine', component: IsMineComponent},
   {path: 'single-post/:id', component: SinglePostComponent},
+  {path: 'tip/:id', component: TipComponent},
   {path: 'register', component: FormRegisterComponent},
 // tslint:disable-next-line: max-line-length
   {path: 'request/:id', component: RequestComponent, loadChildren: '../adopcion/adopcion.module#AdopcionModule', canActivate: [PerfilGuard]},
