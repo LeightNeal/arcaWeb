@@ -17,10 +17,18 @@ export class AdoptComponent implements OnInit {
   showModal: boolean;
   mascotaElegida: Mascota;
   jumbotron: Jumbotron;
+  categoriaPerro: Jumbotron;
+  categoriaGato: Jumbotron;
 
   constructor(private petService: PetService, private solicitudService: SolicitudService, private renderer: Renderer2) {
     this.usuario = JSON.parse(localStorage.getItem('usuarioActual'));
     this.showModal = false;
+    this.solicitudService.obtenerJumbotron('tips').subscribe(
+      (data: Jumbotron) => this.categoriaGato = data, error => console.log(error)
+    );
+    this.solicitudService.obtenerJumbotron('noticias').subscribe(
+      (data: Jumbotron) => this.categoriaPerro = data, error => console.log(error)
+    );
   }
 
   ngOnInit() {
