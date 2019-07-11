@@ -121,7 +121,7 @@
 
 @media screen and (max-width: 768px) {
     .jumbotron {
-        --banner-height: 40vh;
+        --banner-height: 60vh;
     }
 }
 
@@ -1177,6 +1177,24 @@ color: #9D7FBA;
     font-size: calc(var(--banner-title-font-size) / 1.5);
 }
 
+@media screen and (max-width: 980px) {
+    .banner-news {
+        --banner-height: 60vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner-news {
+        --banner-height: 40vh;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .banner-news__content h3 {
+        font-size: calc(var(--banner-title-font-size) / 4);
+    }
+}
+
 /* Sección de noticias */
 
 .news {
@@ -1458,6 +1476,17 @@ transition: .3s;
     text-transform: uppercase;
 }
   
+@media screen and (max-width: 980px) {
+    .banner-login {
+        --banner-height: 60vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner-login {
+        --banner-height: 40vh;
+    }
+}
 /* form de login */
 
 .form-login__submit:hover{
@@ -1478,6 +1507,31 @@ transition: .3s;
     padding: 2rem;
     margin: auto;
     margin-bottom: 0;
+}
+
+@media screen and (max-width: 980px) {
+    .form-login {
+        width: 60vmax;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .form-login {
+        width: 80vmin;
+        top: -7rem;
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .banner-login__content h3 {
+        font-size: calc(var(--banner-title-font-size) / 2.5);
+    }
+
+    .form-login {
+        top: -2rem;
+        width: 95vmin;
+    }
 }
 
 .form-login h3, .form-date h4{
@@ -1552,6 +1606,7 @@ transition: .3s;
     background-color: #fff;
 }
 
+
 .inputLogo img {
     position: absolute;
     left: 0px;
@@ -1596,9 +1651,31 @@ input{
     color: #000;
   }
 
+  @media screen and (max-width: 768px) {
+    .inputLogo {
+        padding: .5rem;
+    }
+
+    .inputLogo img {
+        left: -5px;
+        top: .8rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .inputLogo {
+        padding: .2rem;
+    }
+
+    .inputLogo img {
+        left: -1.5rem;
+        top: .5rem;
+    }
+}
+
   /* pagina de registros */
 
-  .banner-register {
+.banner-register {
     width: 100%;
     height: var(--banner-height);
     background: linear-gradient(45deg, #C05FA4 55%, #EB9B96 80%) left no-repeat;
@@ -1624,7 +1701,13 @@ input{
 .container-form-register {
     padding: 2rem 0;
 }
-  
+
+@media screen and (max-width: 980px) {
+    .banner-register {
+        --banner-height: 60vh;
+    }
+}
+
 /* Página de adoptar perros */
 
 /* Tarjeta de adopción */
@@ -1722,7 +1805,7 @@ input{
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 480px) {
     .card-adopt {
         width: 90vw;
     }
@@ -1790,6 +1873,38 @@ input{
 
 .container-form-register {
     padding: 2rem 0;
+}
+
+@media screen and (max-width: 768px) {
+    .banner-register {
+        --banner-height: 40vh;
+    }
+
+    .form-register {
+        width: 80vmin;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .banner-register__content h3 {
+        font-size: calc(var(--banner-title-font-size) / 2.5);
+    }
+
+    .form-register {
+        width: 95vmin;
+        padding: 1rem;
+        top: -5rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .banner-register__content h3 {
+        font-size: calc(var(--banner-title-font-size) / 4);
+    }
+
+    .form-register {
+        top: -3rem;
+    }
 }
 
 /* splash-screen */
@@ -2186,10 +2301,10 @@ body, html {
 /* card-tips section */
 
 .card-tip{
+    width: 100%;
     display: grid;
     grid-template: 200px /  300px 50px 1fr;
     grid-gap: 10px;
-    grid-template-areas: "img-tip icon-tip content-tip";
     padding: 30px;
     background-color: white;
     border-radius: 5px;
@@ -2211,6 +2326,47 @@ body, html {
     display: flex;
     text-align: justify;
     align-items: center;
+}
+
+@media screen and (max-width: 980px) {
+    .banner-tips {
+        --banner-height: 60vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card-tip {
+        grid-template: 200px 50px 1fr / 1fr;
+        grid-gap: 5px;
+    }
+
+    .img-tip {
+        width: 100%;
+    }
+
+    .icon-tip {
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .banner-tips__content h3 {
+        font-size: calc(var(--banner-title-font-size) / 2.5);
+    }
+    
+    .container {
+        width: 95%;
+    }
+
+    .card-tip {
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .banner-tips__content h3 {
+        font-size: calc(var(--banner-title-font-size) / 4);
+    }
 }
 
 /* Sección de resultados de la página adopta */
@@ -2256,6 +2412,25 @@ body, html {
     display: grid;
     grid-template: 1fr / 20vw 1vmin 1fr;
     grid-gap: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+
+    .pagina-perfil {
+        padding: calc(var(--header-height) * 1.5) 1rem;
+    }
+
+    .pagina__contenido {
+        width: 100%;
+        grid-template: 10vw 1px 1fr/ 1fr;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .pagina__contenido {
+        padding: 0;
+    }
 }
 
 /* Menú de perfil */
@@ -2308,6 +2483,26 @@ body, html {
     color: var(--color-success);
 }
 
+@media screen and (max-width: 768px) {
+    .perfil__nav {
+        width: 100%;
+        height: auto;
+    }
+
+    .perfil__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .perfil__item {
+        padding: .5rem;
+    }
+    
+}
+
 /* Página de cuenta */
 
 .cuenta {
@@ -2343,6 +2538,12 @@ body, html {
     width: 100%;
     height: calc(var(--banner-height) - 5vh);
     position: relative;
+}
+
+@media screen and (max-width: 480px) {
+    .cuenta__dato {
+        padding: .5rem;
+    }
 }
 
 /* Bloqueo de la página de citas */
@@ -2416,6 +2617,18 @@ body, html {
     color: #fff;
     box-shadow: 0 0 1vmin 0.4vmin rgba(10, 10, 10, 0.4);
     padding: .8rem 1.5rem;
+}
+
+@media screen and (max-width: 480px) {
+    .modal-adopt__window {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .modal-adopt__window {
+        width: 95%;
+    }
 }
 
 .full {
@@ -2537,6 +2750,30 @@ body, html {
     background: var(--color-success);
 }
 
+@media screen and (max-width: 768px) {
+    .request__item {
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .request__item {
+        padding: 1rem .5rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .request__nav {
+        display: block;
+        height: auto;
+    }
+    
+    .request__item {
+        width: 80%;
+        margin: 0 auto 5px auto;
+    }
+}
+
 /* Página de datos personales en el módulo de solicitud de adopción */
 
 .container-data {
@@ -2579,6 +2816,26 @@ body, html {
     list-style: decimal;
     line-height: 1.5rem;
 }
+
+@media screen and (max-width: 768px) {
+    .form-data {
+        width: 70vmin;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .form-data {
+        width: 90vmin;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .form-data {
+        width: 95vmin;
+    }
+}
+
+/* Formulario de reportes de la página reportes */
 
 .form-report {
     padding: 1rem;
@@ -2629,6 +2886,51 @@ body, html {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.report-container {
+    width: 100%;
+}
+
+@media screen and (max-width: 980px) {
+    .banner-lost {
+        --banner-height: 60vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner-lost {
+        --banner-height: 40vh;
+    }
+
+    .form-report {
+        top: -5rem;
+        width: 80vmin;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .banner-login__content h3 {
+        font-size: calc(var(--banner-title-font-size) / 2.5);
+    }
+    
+    .form-report {
+        width: 95vmin;
+    }
+
+    .form-report__actions {
+        display: block;
+    }
+
+    .form-report__submit, .form-report__button {
+        width: 100%
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .banner-lost__content h3 {
+        font-size: calc(var(--banner-title-font-size) / 4);
+    }
 }
 
 .table-interested {

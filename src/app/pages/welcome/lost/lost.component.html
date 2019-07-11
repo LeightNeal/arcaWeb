@@ -5,7 +5,7 @@
       <h3>{{jumbotron.slogan}}</h3>
     </div>
   </section>
-  <section class="centered-layout">
+  <section class="centered-layout report-container">
     <form class="form-report" [formGroup]="formulario" (ngSubmit)="enviarReporte()">
       <label for="txtNombreReportante">Nombre de quien reporta</label>
       <input formControlName="nombre" class="form-report__input" type="text" id="txtNombreReportante">
