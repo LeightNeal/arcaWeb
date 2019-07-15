@@ -25,7 +25,7 @@ export class NavWelcomeComponent implements OnInit, OnDestroy {
     this.authService.obtenerEstado().subscribe(data => {
       if (!data) {
         localStorage.removeItem('usuarioActual');
-        if (this.router.url.indexOf('perfil') > 0 || this.router.url.indexOf('request') > 0) {
+        if (this.router.url.indexOf('perfil') > 0) {
           location.reload();
         }
       }

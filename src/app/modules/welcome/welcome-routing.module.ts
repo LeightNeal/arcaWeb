@@ -34,7 +34,7 @@ const routes: Routes = [
   {path: 'tip/:id', component: TipComponent},
   {path: 'register', component: FormRegisterComponent},
 // tslint:disable-next-line: max-line-length
-  {path: 'request/:id', component: RequestComponent, loadChildren: '../adopcion/adopcion.module#AdopcionModule', canActivate: [PerfilGuard]},
+  {path: 'request/:id', component: RequestComponent, loadChildren: '../adopcion/adopcion.module#AdopcionModule'},
   {path: 'perfil', component: PerfilComponent, loadChildren: '../perfil/perfil.module#PerfilModule', canActivate: [PerfilGuard]},
   {path: '', pathMatch: 'full', redirectTo: 'landing'}
 ];

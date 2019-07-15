@@ -19,7 +19,7 @@
       </div>
     </section>
     <section class="results-list">
-      <app-card-adopt *ngFor="let perro of perros" [mascota]="perro" [login]="usuario" (adopt)="changeState($event)"></app-card-adopt>
+      <app-card-adopt *ngFor="let perro of perros" [mascota]="perro" (adopt)="changeState($event)"></app-card-adopt>
     </section>
   </section>
 </section>

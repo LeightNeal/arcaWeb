@@ -11,7 +11,7 @@
   <section *ngIf="mascotas" class="results-container">
     <h2 class="results-title">Resultados de la búsqueda</h2>
     <article class="results-list">
-      <app-card-adopt *ngFor="let mascota of mascotas" [mascota]="mascota" [login]="usuario" (adopt)="changeState($event)"></app-card-adopt>
+      <app-card-adopt *ngFor="let mascota of mascotas" [mascota]="mascota" (adopt)="changeState($event)"></app-card-adopt>
     </article>
   </section>
   

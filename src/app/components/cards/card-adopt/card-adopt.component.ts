@@ -8,7 +8,6 @@ import { Mascota } from 'src/app/models/mascota';
 })
 export class CardAdoptComponent implements OnInit {
   @Input() mascota: Mascota;
-  @Input() login: any;
   @Output() adopt: EventEmitter<any>;
 
   constructor() {

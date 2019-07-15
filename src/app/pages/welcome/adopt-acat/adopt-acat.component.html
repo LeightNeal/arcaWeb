@@ -19,7 +19,7 @@
       </div>
     </section>
     <section class="results-list" *ngIf="gatos">
-      <app-card-adopt *ngFor="let gato of gatos" [mascota]="gato" [login]="usuario" (adopt)="changeState($event)"></app-card-adopt>
+      <app-card-adopt *ngFor="let gato of gatos" [mascota]="gato" (adopt)="changeState($event)"></app-card-adopt>
     </section>
   </section>
 </section>
