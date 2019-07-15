@@ -1765,7 +1765,7 @@ input{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
+    object-position: center -45px;
 }
 
 .card-adopt__content {
@@ -2578,9 +2578,10 @@ body, html {
 .modal-adopt__window {
     background: #fff;
     width: 60%;
-    height: auto;
+    height: 70vh;
     padding: 1.5rem;
     border-radius: 1vmin;
+    overflow: scroll;
 }
 
 .modal-adopt__header {
@@ -2950,4 +2951,14 @@ body, html {
 
 .table-interested > tbody > tr:nth-child(odd) {
     background: rgba(0, 171, 91, .1);
+}
+.modal-adopt__img {
+    width: 100%;
+    height: 100%;
+}
+
+.modal-adopt__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
