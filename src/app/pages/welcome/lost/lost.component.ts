@@ -23,7 +23,7 @@ export class LostComponent implements OnInit {
 
   constructor(private petService: PetService, private solicitudService: SolicitudService, private renderer: Renderer2) {
     this.petService.obtenerMascotarPerdidas()
-    .subscribe((data: Perdido[]) => this.perdidos = data, error => console.log(error));
+      .subscribe((data: Perdido[]) => this.perdidos = data, error => console.log(error));
     this.formulario = new FormGroup({
       'nombre': new FormControl(null, Validators.required),
       'telefono': new FormControl(null, Validators.required),
@@ -46,7 +46,9 @@ export class LostComponent implements OnInit {
     this.solicitudService.obtenerJumbotron('reportes').subscribe(
       (data: Jumbotron) => {
         this.jumbotron = data;
-        this.renderer.setStyle(this.jumbotronLost.nativeElement, 'background', `linear-gradient(45deg, ${this.jumbotron.color1} 60%, ${this.jumbotron.color2}), url(${this.jumbotron.img}) left no-repeat`);
+        this.renderer.setStyle(this.jumbotronLost.nativeElement,
+          'background', `linear-gradient(45deg, ${this.jumbotron.color1} 
+            60%, ${this.jumbotron.color2}), url(${this.jumbotron.img}) left no-repeat`);
         this.renderer.setStyle(this.jumbotronLost.nativeElement, 'background-size', 'cover');
       }
     );
